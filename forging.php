@@ -40,7 +40,6 @@
 	</style>
   </head>
   <body>
-    <!--<?php require_once('/inc/menu_bar.php'); ?>-->
     <div id = "main" style = "margin-top:10px;">
 		<h1><center>Welcome to The Forge</center></h1>
 		<div class = "row" style = "margin-bottom: 2px;" id = "information-panel">
