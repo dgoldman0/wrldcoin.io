@@ -4,11 +4,11 @@ var names = [];
 addresses.ARC = 'TBFJzpybYmSfLde8uT5i9C6TMfTo5CEjST';
 names.ARC = 'Arcadium';
 
-addresses.EMR = 'TYjKtHWXMLa9JVdQM5hYn6xeipYavusf7g';
-names.EMR = 'Emergency Response';
+addresses.PHC = 'TGmPDUEGrdrq2Lf23U8xTckNRRU8pxmZEf';
+names.PHC = 'Public Health Coin';
 
-addresses.ACW = 'TE6c9Qi4HGHf6j7kcs3AK1snbgQ4bEMEtv';
-names.ACW = 'Academic Reward';
+//addresses.ACW = 'TE6c9Qi4HGHf6j7kcs3AK1snbgQ4bEMEtv';
+//names.ACW = 'Academic Reward';
 
 const TID = 1002567;
 
@@ -21,7 +21,7 @@ $(document).ready(function() {
 	var sel = document.getElementById('token');
 	let tokens = Object.keys(names);
 	for (let i in tokens) {
-		let token = tokens[i]; // Not sure why for x in keys doesn't give keys rather than index!	
+		let token = tokens[i]; // Not sure why for x in keys doesn't give keys rather than index!
 		let opt = document.createElement('option');
 		opt.value = token;
 		opt.innerText = names[token];
@@ -54,7 +54,7 @@ $(document).ready(function() {
 			if (Number(amt) != NaN) {
 				amt = (amt * 1000000).toFixed(0);
 				contract.forge().send({shouldPollResponse: false, tokenValue: amt, tokenId: TID});
-			} 
+			}
 		}
 	});
 	// Get the correct registartion fee and send it to register for smithing.
