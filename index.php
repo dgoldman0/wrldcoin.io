@@ -42,6 +42,11 @@
     <?php require_once("inc/menu_bar.php"); ?>
     <div id = "main" style = "margin-top:10px;">
 		    <h1><center>Future Home of the World Builder Initiative</center></h1>
+        <hr/>
+        We apologize for the limited information on this page. We're in the process of switching much of our resources over from an old URL. The World Builder Initiative is not a single project, but a collection of projects meant to act as an ecosystem. We are a think tank and incubator. If you're interested i
+        our efforts, please join us in our <a href="https://t.me/tworldbuilder">Telegram Group</a>. You can also use <a href = "http://worldbuilder.fun/">our mini-games</a> to collect WRLD, the core token of our ecosystem. Or visit the pages of our child projects.
+        <h2><a href = "https://promote.health/">Promote.Health</a></h2>
+        Promote.Health seeks to use the latest technological and scientific advancements to repair our broken public health system.
     </div>
   </body>
 </html>
