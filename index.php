@@ -40,7 +40,7 @@
   </head>
   <body>
     <div id = "main" style = "margin-top:10px;">
-        <?php include_once "inc/menu_bar.php"; ?>
+        <?php include("inc/menu_bar.php"); ?>
 		    <h1><center>Future Home of the World Builder Initiative</center></h1>
     </div>
   </body>
