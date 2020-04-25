@@ -40,7 +40,8 @@
   </head>
   <body>
     <div id = "main" style = "margin-top:10px;">
-		    <h1><center>Welcome to The Forge</center></h1>
+        <?php include_once "/inc/menu_bar.php"; ?>
+		    <h1><center>Future Home of the World Builder Initiative</center></h1>
     </div>
   </body>
 </html>
