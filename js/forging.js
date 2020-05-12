@@ -1,10 +1,10 @@
 var addresses = [];
 var names = [];
 
-addresses.ARC = 'TBFJzpybYmSfLde8uT5i9C6TMfTo5CEjST';
-names.ARC = 'Arcadium';
+//addresses.ARC = 'TBFJzpybYmSfLde8uT5i9C6TMfTo5CEjST';
+//names.ARC = 'Arcadium';
 
-addresses.PHC = 'TSwEtVvnexUR9GJijSZQRJStqK2C7MjakQ';
+addresses.PHC = 'TPn4jZSjbzmazzqWuJvxFamPbjrx6XSVV3';
 names.PHC = 'Public Health Coin';
 
 //addresses.ACW = 'TE6c9Qi4HGHf6j7kcs3AK1snbgQ4bEMEtv';
