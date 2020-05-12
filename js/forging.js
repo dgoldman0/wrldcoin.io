@@ -4,7 +4,7 @@ var names = [];
 addresses.ARC = 'TBFJzpybYmSfLde8uT5i9C6TMfTo5CEjST';
 names.ARC = 'Arcadium';
 
-addresses.PHC = 'TGmPDUEGrdrq2Lf23U8xTckNRRU8pxmZEf';
+addresses.PHC = 'TYqfhbjCVEpcUtg7mHt885xK3bJ1EUySZ1';
 names.PHC = 'Public Health Coin';
 
 //addresses.ACW = 'TE6c9Qi4HGHf6j7kcs3AK1snbgQ4bEMEtv';
@@ -53,7 +53,9 @@ $(document).ready(function() {
 			var amt = $("#amtWRLD").val();
 			if (Number(amt) != NaN) {
 				amt = (amt * 1000000).toFixed(0);
-				contract.forge().send({shouldPollResponse: false, tokenValue: amt, tokenId: TID});
+				contract.forge().send({shouldPollResponse: true, tokenValue: amt, tokenId: TID}, function (err, res) {
+					console.log(err);
+				});
 			}
 		}
 	});
