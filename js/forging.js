@@ -57,6 +57,7 @@ $(document).ready(function() {
 					console.log("Forge");
 					console.log(res);
 					console.log(err);
+					console.log(err.toString());
 				});
 			}
 		}
