@@ -54,6 +54,8 @@ $(document).ready(function() {
 			if (Number(amt) != NaN) {
 				amt = (amt * 1000000).toFixed(0);
 				contract.forge().send({shouldPollResponse: true, tokenValue: amt, tokenId: TID}, function (err, res) {
+					console.log("Forge");
+					console.log(res);
 					console.log(err);
 				});
 			}
