@@ -4,7 +4,7 @@ var names = [];
 addresses.ARC = 'TBFJzpybYmSfLde8uT5i9C6TMfTo5CEjST';
 names.ARC = 'Arcadium';
 
-addresses.PHC = 'THmBrDj9jZKyqmD6KhEvs6uVUiTzsqccjN';
+addresses.PHC = 'TSwEtVvnexUR9GJijSZQRJStqK2C7MjakQ';
 names.PHC = 'Public Health Coin';
 
 //addresses.ACW = 'TE6c9Qi4HGHf6j7kcs3AK1snbgQ4bEMEtv';
@@ -14,7 +14,7 @@ const TID = 1002567;
 
 var active = [];
 active.token = 'PHC';
-active.address = 'THmBrDj9jZKyqmD6KhEvs6uVUiTzsqccjN';
+active.address = addresses.PHC;
 
 $(document).ready(function() {
 	// Add Options to Select
