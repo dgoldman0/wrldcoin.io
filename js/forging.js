@@ -13,8 +13,8 @@ names.PHC = 'Public Health Coin';
 const TID = 1002567;
 
 var active = [];
-active.token = 'ARC';
-active.address = 'TBFJzpybYmSfLde8uT5i9C6TMfTo5CEjST';
+active.token = 'PHC';
+active.address = 'THmBrDj9jZKyqmD6KhEvs6uVUiTzsqccjN';
 
 $(document).ready(function() {
 	// Add Options to Select
