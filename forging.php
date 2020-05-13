@@ -84,7 +84,7 @@
 	    	</div>
 	    	<div class = "col-md-3 rounded border" id = "forge_form">
 	    		<h1><center>Forge (<span id = "cur2">PHC</span>)</center></h1>
-		    	Wallet Balance: <span id = "balance">0</span> <span id = "cur3">ARC</span><br/>
+		    	Wallet Balance: <span id = "balance">0</span> <span id = "cur3">PHC</span><br/>
 		    	Forge Price: <span id = "price">0</span> WLRD<br/>
 		    	Maximum WRLD Allowed: <span id = "max">0</span><br/>
 	  			Estimated number of tokens to forge: <span id = "est">0</span>
