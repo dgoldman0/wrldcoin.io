@@ -70,7 +70,7 @@
 	    		<b>Registration:</b> To prevent people from abusing the system and forging with multiple accounts, you'll have to pay an initial registration fee. This fee will make you a smith a coin. It's a one time fee (per token project), paid in TRX, to the project stewards. Each project sets its own smithing fee.
 	    	</div>
 	    	<div class = "col-md-3 rounded border" id = "register_form">
-	    		<h1><center>Register to Forge <span id = "cur">ARC</span></center></h1>
+	    		<h1><center>Register to Forge <span id = "cur">PHC</span></center></h1>
 	    		You're not currently registered as a smith for this token. You'll have to pay an initial fee of <span id = "registration_fee">0</span> TRX to forge.
 		    	<form>
 		    		<div class="form-group">
@@ -83,7 +83,7 @@
 	    		You are either not logged in using a Tron compatible browser, or are not using one.
 	    	</div>
 	    	<div class = "col-md-3 rounded border" id = "forge_form">
-	    		<h1><center>Forge (<span id = "cur2">ARC</span>)</center></h1>
+	    		<h1><center>Forge (<span id = "cur2">PHC</span>)</center></h1>
 		    	Wallet Balance: <span id = "balance">0</span> <span id = "cur3">ARC</span><br/>
 		    	Forge Price: <span id = "price">0</span> WLRD<br/>
 		    	Maximum WRLD Allowed: <span id = "max">0</span><br/>
