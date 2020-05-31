@@ -1,10 +1,10 @@
 var addresses = [];
 var names = [];
 
-//addresses.ARC = 'TBFJzpybYmSfLde8uT5i9C6TMfTo5CEjST';
-//names.ARC = 'Arcadium';
+addresses.ARC = 'TBFJzpybYmSfLde8uT5i9C6TMfTo5CEjST';
+names.ARC = 'Arcadium';
 
-addresses.PHC = 'TPn4jZSjbzmazzqWuJvxFamPbjrx6XSVV3';
+addresses.PHC = 'TGmPDUEGrdrq2Lf23U8xTckNRRU8pxmZEf';
 names.PHC = 'Public Health Coin';
 
 //addresses.ACW = 'TE6c9Qi4HGHf6j7kcs3AK1snbgQ4bEMEtv';
@@ -13,8 +13,8 @@ names.PHC = 'Public Health Coin';
 const TID = 1002567;
 
 var active = [];
-active.token = 'PHC';
-active.address = addresses.PHC;
+active.token = 'ARC';
+active.address = 'TBFJzpybYmSfLde8uT5i9C6TMfTo5CEjST';
 
 $(document).ready(function() {
 	// Add Options to Select
@@ -53,12 +53,7 @@ $(document).ready(function() {
 			var amt = $("#amtWRLD").val();
 			if (Number(amt) != NaN) {
 				amt = (amt * 1000000).toFixed(0);
-				contract.forge().send({shouldPollResponse: true, tokenValue: amt, tokenId: TID}, function (err, res) {
-					console.log("Forge");
-					console.log(res);
-					console.log(err);
-					console.log(err.toString());
-				});
+				contract.forge().send({shouldPollResponse: false, tokenValue: amt, tokenId: TID});
 			}
 		}
 	});

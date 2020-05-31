@@ -1,52 +1,93 @@
-<html>
-  <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114409253-4"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	  gtag('config', 'UA-114409253-4');
-	</script>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="/js/tronweb.js"></script>
-  <script src="/js/abi.js"></script>
-  <script src="/js/forging.js"></script>
-  <link rel="stylesheet" href="/css/style.css">
-  <title>World Builder Forging Platform</title>
-	<meta property="og:title" content="World Builder Project" />
-	<meta property="og:description" content="World Builder Initiative is a think tank and seed operation." />
-	<meta property="og:url" content="https://wrldcoin.io" />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="website" />
-	<meta property="og:site" content="World Builder" />
-	<meta property="og:image" content="https://worldbuilder.fun/img/logo.png"/>
-	<meta name="twitter:title" content="The World Builder Initiative" />
-	<meta name="twitter:description" content="The World Builder Initiative is Forging the Future" />
-	<meta name="twitter:image" content="https://worldbuilder.fun/img/logo.png" />
-	<style>
-		.info {
-			background-color: WhiteSmoke;
-			margin: 20x;
-		}
-		img {
-			width: 100%;
-		}
-	</style>
-  </head>
-  <body>
-    <?php require_once("inc/menu_bar.php"); ?>
-    <div id = "main" style = "margin-top:10px;">
-		    <h1><center>Future Home of the World Builder Initiative</center></h1>
-        <hr/>
-        We apologize for the limited information on this page. We're in the process of switching much of our resources over from an old URL. The World Builder Initiative is not a single project, but a collection of projects meant to act as an ecosystem. We are a think tank and incubator. If you're interested i
-        our efforts, please join us in our <a href="https://t.me/tworldbuilder">Telegram Group</a>. You can also use <a href = "http://worldbuilder.fun/">our mini-games</a> to collect WRLD, the core token of our ecosystem. Or visit the pages of our child projects.
-        <h2><a href = "https://promote.health/">Promote.Health</a></h2>
-        Promote.Health seeks to use the latest technological and scientific advancements to repair our broken public health system.
-    </div>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home | WrldBuilder</title>
+        
+        <meta charset="utf8">
+        <meta name="description" content="Write your description here">
+        <meta name="keywords" content="Add, Some, Good, Keywords, Here, Separated, By, Commas, and, Spaces, so, people, on, the, internet, can, find, your, site, more, easily">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        
+        <!-- Bootstrap theme -->
+        <link rel="stylesheet" href="https://bootswatch.com/4/pulse/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/wrld.css" />
+        
+        <link rel="icon" type="image/png" href="assets/img/etc.png">
+        
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/f352960784.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body class="wallpaper">
+        <?php include('modules/navbar.php'); ?>
+        
+        <!-- SPACING OF 5 BR'S NECESSARY FOR TOP OF CONTENT TO SHOW WITH STICKY NAVBAR. -->
+        <br /><br /><br /><br /><br />
+        
+        <!-- MAIN CONTENT DIV -->
+        <div class="container">
+            <div class="row jumbotron glassPanel rcAll">
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-left">
+                            <h1 class="text-white">WorldCoin</h1>
+                            <p class="text-success">Tokenising the world&apos;s most imperative services and resources</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card glassPanel border-light rcAll">
+                        <div class="card-header glassPanel text-white rcTop">Introduction</div>
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col text-left">
+                                        <p class="text-white">
+                                            Welcome to WorldCoin.io - the home of the WrldBuilder Project on TRON. At present, there is only limited information available as we are currently migrating and upgrading our resources to a newer, better codebase.<br />
+                                            <br />
+                                            The World Builder project is not of a single focus - World Builder is a think-tank and incubator of ideas and technology which can be enhanced with Blockchain - If you're interested in our efforts, please join us in our <a href="https://t.me/tworldbuilder" target="_blank">Telegram Group</a>.<br />
+                                            <br />
+                                            You can also use our mini-games to collect WRLD, the core token of our ecosystem. Or visit the pages of our child projects.
+            
+                                            Promote.Health seeks to use the latest technological and scientific advancements to repair our broken public health system.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer glassPanel rcBottom"></div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card glassPanel border-light rcAll">
+                        <div class="card-header glassPanel text-white rcTop">Spare content card</div>
+                        <div class="card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col text-left">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer glassPanel rcBottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Project Dependencies -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/tronweb.js"></script>
+        
+        <!-- Dapp Scripts -->
+        <script src="assets/lib/abi.js"></script>
+        <script src="assets/lib/forging.js"></script>
+    </body>
 </html>
