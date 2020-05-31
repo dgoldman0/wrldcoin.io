@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <title>Forge | WrldBuilder</title>
-        
+
         <!-- CHARSET AND VIEWPORT METAS AT THE TOP, BELOW TITLE ALWAYS. -->
         <meta charset="utf8">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
@@ -10,22 +10,22 @@
         <!-- NOW SOME DESCRIPTION METAS -->
         <meta name="description" content="Write your description here">
         <meta name="keywords" content="Add, Some, Good, Keywords, Here, Separated, By, Commas, and, Spaces, so, people, on, the, internet, can, find, your, site, more, easily">
-        
+
         <!-- CSS, ICONS AND BOOTSTRAP -->
         <link rel="stylesheet" href="https://bootswatch.com/4/pulse/bootstrap.min.css" />
         <link rel="stylesheet" href="assets/css/world.css" />
         <link rel="icon" type="image/png" href="assets/img/etc.png">
-        
+
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/f352960784.js" crossorigin="anonymous"></script>
     </head>
-    
+
     <body class="wallpaper">
         <?php include('modules/navbar.php'); ?>
-        
+
         <!-- SPACING OF 5 BR'S NECESSARY FOR TOP OF CONTENT TO SHOW WITH STICKY NAVBAR. -->
         <br /><br /><br /><br /><br />
-        
+
         <!-- MAIN CONTENT DIV -->
         <div class="container">
             <div class="row jumbotron glassPanel rcAll">
@@ -38,30 +38,30 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col-md-3">
                     <select id = "token" name = "token"></select><br />
                     <small class="text-white">Select Token</small>
                 </div>
-                
+
                 <div class="col-md-3">
                     <h4 class="text-white"><span id="smith-count">0</span></h4>
                     <small class="text-white">Verified Smiths</small>
                 </div>
-                
+
                 <div class="col-md-3">
                     <h4 class="text-white"><span id="total-supply">0</span>M SUN</h4>
                     <small class="text-white">Total Supply</small>
                 </div>
-                
+
                 <div class="col-md-3">
                     <h4 class="text-white"><span id="total-wlrd">0</span>M SUN</h4>
                     <small class="text-white">WORLD Used</small>
                 </div>
             </div>
             <br />
-            
+
             <div class="row">
                 <div class="col-md-6">
                     <div class="card glassPanel border-light rcAll">
@@ -84,7 +84,7 @@
                         <div class="card-footer glassPanel rcBottom"></div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-6">
                     <div class="card glassPanel border-light rcAll">
                         <div class="card-header glassPanel text-white rcTop">Forge Controls</div>
@@ -98,10 +98,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <div class="row">
                                     <div class="col text-center" id="register_form">
-                                        <h1 class="text-white">Register to Forge <span id = "cur">ARC</span></h1>
+                                        <h1 class="text-white">Register to Forge <span id = "cur">PHC</span></h1>
                                         You're not currently registered as a smith for this token. You'll have to pay an initial fee of <span id = "registration_fee">0</span> TRX to forge.
                                         <form>
                                             <div class="form-group">
@@ -109,16 +109,16 @@
                                             </div>
                                         </form>
                                     </div>
-                                    
+
                                     <div class="col text-center" id="forge_form">
-                                        <h1 class="text-white">TokenForge (<span id = "cur2">ARC</span>)</h1>
-                                        Wallet Balance: <span id = "balance">0</span> <span id = "cur3">ARC</span><br/>
+                                        <h1 class="text-white">TokenForge (<span id = "cur2">PHC</span>)</h1>
+                                        Wallet Balance: <span id = "balance">0</span> <span id = "cur3">PHC</span><br/>
                                         Forge Price: <span id = "price">0</span> WORLD<br/>
                                         Maximum WORLD Allowed: <span id = "max">0</span><br/>
                                         Estimated number of tokens to forge: <span id = "est">0</span>
                                         <hr/>
                                         <input type="number" min="0" max="100000" class="form-control rcAll" id="amtWRLD">
-                                            
+
                                     </div>
                                 </div>
                             </div>
@@ -134,13 +134,13 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Project Dependencies -->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/tronweb.js"></script>
-        
+
         <!-- Dapp Scripts -->
         <script src="assets/lib/abi.js"></script>
         <script src="assets/lib/forging.js"></script>

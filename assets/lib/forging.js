@@ -1,9 +1,6 @@
 var addresses = [];
 var names = [];
 
-addresses.ARC = 'TBFJzpybYmSfLde8uT5i9C6TMfTo5CEjST';
-names.ARC = 'Arcadium';
-
 addresses.PHC = 'TGmPDUEGrdrq2Lf23U8xTckNRRU8pxmZEf';
 names.PHC = 'Public Health Coin';
 
@@ -13,8 +10,8 @@ names.PHC = 'Public Health Coin';
 const TID = 1002567;
 
 var active = [];
-active.token = 'ARC';
-active.address = 'TBFJzpybYmSfLde8uT5i9C6TMfTo5CEjST';
+active.token = 'PHC';
+active.address = 'TGmPDUEGrdrq2Lf23U8xTckNRRU8pxmZEf';
 
 $(document).ready(function() {
 	// Add Options to Select
