@@ -117,7 +117,7 @@
                                         Maximum WORLD Allowed: <span id = "max">0</span><br/>
                                         Estimated number of tokens to forge: <span id = "est">0</span>
                                         <hr/>
-                                        <input type="number" min="0" max="100000" class="form-control rcAll" id="amtWRLD">
+                                        <input type="number" min="0" class="form-control rcAll" id="amtWRLD">
 
                                     </div>
                                 </div>
