@@ -1,7 +1,8 @@
 var addresses = [];
 var names = [];
 
-addresses.PHC = 'TPn4jZSjbzmazzqWuJvxFamPbjrx6XSVV3';
+addresses.PHC = 'TBWKyAYGvkMwiKaGbZoRXuhJQXQqn2zzrX';
+// Old TPn4jZSjbzmazzqWuJvxFamPbjrx6XSVV3
 names.PHC = 'Public Health Coin';
 
 //addresses.ACW = 'TE6c9Qi4HGHf6j7kcs3AK1snbgQ4bEMEtv';
