@@ -68,7 +68,7 @@
                         <div class="card-body">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col text-left">
+                                    <div class="col text-left text-white">
                                       We have a number of projects already in progress. These projects will function as the core ecosystem for World Builder.
                                       <ul>
                                         <li>Promote.Health</li>
