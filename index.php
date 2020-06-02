@@ -64,12 +64,17 @@
 
                 <div class="col-md-6">
                     <div class="card glassPanel border-light rcAll">
-                        <div class="card-header glassPanel text-white rcTop">Spare content card</div>
+                        <div class="card-header glassPanel text-white rcTop">Projects</div>
                         <div class="card-body">
                             <div class="container">
                                 <div class="row">
                                     <div class="col text-left">
-
+                                      We have a number of projects already in progress. These projects will function as the core ecosystem for World Builder.
+                                      <ul>
+                                        <li>Promote.Health</li>
+                                        <li>Academic Reward Token</li>
+                                        <li>Project Outpost</li>
+                                      </ul>
                                     </div>
                                 </div>
                             </div>
