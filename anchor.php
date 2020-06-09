@@ -2,55 +2,28 @@
 <html lang="en">
     <head>
         <title>Home | WrldBuilder</title>
-        
+
         <meta charset="utf8">
         <meta name="description" content="Write your description here">
         <meta name="keywords" content="Add, Some, Good, Keywords, Here, Separated, By, Commas, and, Spaces, so, people, on, the, internet, can, find, your, site, more, easily">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-        
+
         <!-- Bootstrap theme -->
         <link rel="stylesheet" href="https://bootswatch.com/4/pulse/bootstrap.min.css" />
         <link rel="stylesheet" href="assets/css/wrld.css" />
-        
+
         <link rel="icon" type="image/png" href="assets/img/etc.png">
-        
+
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/f352960784.js" crossorigin="anonymous"></script>
     </head>
-    
-    <body class="wallpaper">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" width="30px" height="30px" /> WorldCoin.io</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <div class="collapse navbar-collapse" id="navbarColor02">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-toolbox text-white"></i> Menu</a>
-                            <div class="dropdown-menu bg-primary" aria-labelledby="dropdown04">
-                                <a class="dropdown-item text-white" href="#"> Link</a>
-                                <a class="dropdown-item text-white" href="#"> Link</a>
-                                <a class="dropdown-item text-white" href="#"> Link</a>
-                            </div>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="forge.html"><i class="fas fa-fire-alt text-white"></i> Forge</a></li>
-                    </ul>
-                    
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="https://twitter.com/thebcutimes1/" target="_blank"><i class="fab fa-twitter text-white"></i> Twitter</a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://github.com/dgoldman0/worldcoin.io" target="_blank"><i class="fab fa-github text-white"></i> GitHub</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" target="_blank"><i class="fas fa-search-dollar text-white"></i> Contract</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+    <body class="wallpaper">
+      <?php include('modules/navbar.php'); ?>
         
         <br /><br /><br />
         <br /><br />
-        
+
         <div class="container">
             <div class="row jumbotron glassPanel rcAll">
                 <div class="container">
@@ -62,7 +35,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="row">
         <div class="col-md-6">
             <div class="card border-white rcAll" style="background: rgba(0, 0, 0, 0);">
@@ -84,7 +57,7 @@
             <a class="btn btn-block btn-md btn-primary rcAll text-white" href="#">What are Power Levels?</a><br /><br />
             <a class="btn btn-block btn-md btn-warning rcAll text-white" href="#">Buy WRLD Token</a><br /><br />
         </div>
-                
+
         <div class="col-md-6">
             <div class="card border-danger rcAll" style="background: rgba(0, 0, 0, 0);">
                 <div class="card-header text-white rcTop" style="background: rgba(0, 0, 0, 0.65);">MY WRLD VAULT</div>
@@ -97,7 +70,7 @@
                                 </span><br />
                                 <small><b>BALANCE</b></small>
                             </div>
-                                    
+
                             <div class="col text-center">
                                 <span class="badge badge-danger text-white rcAll">
                                     <span class="frozenAmount mono">0</span> WRLD
@@ -106,7 +79,7 @@
                             </div>
                         </div>
                         <br />
-                                
+
                         <div class="row">
                             <div class="col text-center">
                                 <span class="badge badge-danger text-white rcAll">
@@ -114,7 +87,7 @@
                                 </span><br />
                                 <small><b>TOTAL LOCKUP</b></small>
                             </div>
-                                    
+
                             <div class="col text-center">
                                 <span class="badge badge-danger text-white rcAll">
                                     <span class="divsAmount mono">0</span>
@@ -122,15 +95,15 @@
                                 <small><b>YOUR LEVEL</b></small>
                             </div>
                         </div>
-                                
+
                         <hr />
-                                
+
                         <div class="row">
                             <input class="form-control form-control-sm rcAll" id="freezeAmount" placeholder="Amount to Lock Up">
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="card-footer text-white rcBottom" style="background: rgba(0, 0, 0, 0.65);">
                     <div class="row">
                         <div class="col">
@@ -138,7 +111,7 @@
                         </div>
                         <div class="col">
                             <span class="btn btn-block btn-danger btn-sm rcAll" style="cursor:pointer" id="unfreeze">UNLOCK WRLD</span>
-                        </div>           
+                        </div>
                     </div>
                 </div>
             </div>
@@ -146,13 +119,13 @@
         </div>
     </div>
         </div>
-        
+
         <!-- Project Dependencies -->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/tronweb.js"></script>
-        
+
         <!-- Dapp Scripts -->
         <script src="assets/lib/abi.js"></script>
         <script src="assets/lib/forging.js"></script>

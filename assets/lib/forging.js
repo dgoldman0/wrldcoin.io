@@ -83,6 +83,7 @@ $(document).ready(function() {
 				$('#balance').text(res.balance / 1000000);
 			});
 			contract.totalWRLD().call().then(function (res) {
+				console.log(res);
 				if (Number(res) != NaN) {
 					$("#total-wrld").text(res / 1000000);
 				}

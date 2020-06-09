@@ -57,7 +57,7 @@
 
                 <div class="col-md-3">
                     <h4 class="text-white"><span id="total-wlrd">0</span>M SUN</h4>
-                    <small class="text-white">WORLD Used</small>
+                    <small class="text-white">WRLD Used</small>
                 </div>
             </div>
             <br />
