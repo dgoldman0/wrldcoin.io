@@ -82,9 +82,7 @@ $(document).ready(function() {
 			contract.balanceOf(tronWeb.defaultAddress.base58).call(function (err, res) {
 				$('#balance').text(res.balance / 1000000);
 			});
-			contract.totalWRLD().call().then(function (err, res) {
-				console.log(res);
-				console.log(err);
+			contract.totalWRLD().call().then(function (res, err) {
 				if (Number(res) != NaN) {
 					$("#total-wrld").text(res / 1000000);
 				}
