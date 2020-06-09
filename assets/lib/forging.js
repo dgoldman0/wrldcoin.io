@@ -79,6 +79,7 @@ $(document).ready(function() {
 					$("#total-supply").text(res / 1000000);
 				}
 			});
+			// I can't seem to figure out which order is res and error!! Something's weird.
 			contract.balanceOf(tronWeb.defaultAddress.base58).call(function (err, res) {
 				$('#balance').text(res.balance / 1000000);
 			});
