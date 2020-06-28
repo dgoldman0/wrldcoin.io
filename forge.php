@@ -33,7 +33,7 @@
                     <div class="row">
                         <div class="col text-left">
                             <h1 class="text-white">TokenForge</h1>
-                            <p class="text-success">Mint the Security or Asset you need with WORLD token</p>
+                            <p class="text-success">Forge new assets you need using WRLD token</p>
                         </div>
                     </div>
                 </div>
@@ -71,6 +71,8 @@
                                 <div class="row">
                                     <div class="col text-left">
                                         <p class="text-white">
+                                            <b>We are currently updating the PHC token. You should receive equivalent tokens and a refund for the forging fee within a few days. Contact us if you have any questions</b>.
+                                            <br/>
                                             This platform lets you take World Builder's WORLD coin, and "burn" it in return for the creation of new tokens from our ecosystem. Those burned tokens will be temporarily locked out of circulation, before eventually being returned to the project team of the associated token.<br />
                                             <br />
                                             <b>Forging:</b> To make forging a bit more like actually mining for things like gold and silver, the forge rate isn't constant. Instead, the cost to forge increases based on how recently the last forge occurred. You may try forging tokens once per hour, up to the current per user forge limit.<br />

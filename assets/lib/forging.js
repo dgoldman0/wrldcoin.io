@@ -2,8 +2,8 @@ var addresses = [];
 var names = [];
 var links = [];
 
-addresses.PHC = 'TBWKyAYGvkMwiKaGbZoRXuhJQXQqn2zzrX';
-// Old TPn4jZSjbzmazzqWuJvxFamPbjrx6XSVV3
+addresses.PHC = 'TVxEqHRA9woSA2RvkJJEfmYJJG6NXvbFiV';
+// Old PHC TBWKyAYGvkMwiKaGbZoRXuhJQXQqn2zzrX
 names.PHC = 'Public Health Coin';
 links.PHC = 'https://promote.health/public-health-coin/'
 //addresses.ACW = 'TE6c9Qi4HGHf6j7kcs3AK1snbgQ4bEMEtv';
@@ -13,7 +13,7 @@ const TID = 1002567;
 
 var active = [];
 active.token = 'PHC';
-active.address = 'TBWKyAYGvkMwiKaGbZoRXuhJQXQqn2zzrX';
+active.address = 'TVxEqHRA9woSA2RvkJJEfmYJJG6NXvbFiV';
 
 $(document).ready(function() {
 	// Add Options to Select
@@ -33,7 +33,6 @@ $(document).ready(function() {
 		$('#cur2').text(token);
 		$('#cur3').text(token);
 		$('#project_link').attr('href', links[token]);
-		console.log(token);
 		active.token = token;
 		active.address = addresses[token];
 	});
