@@ -1,6 +1,6 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="index.php"><img src="assets/img/logo.png" width="30px" height="30px" /> WorldCoin.io</a>
+        <a class="navbar-brand" href="index.php"><img src="assets/img/logo.png" width="30px" height="30px" /> wrldcoin.io</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -18,9 +18,9 @@
             </ul>
 
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="https://twitter.com/#" target="_blank"><i class="fab fa-twitter text-white"></i> Twitter</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://github.com/#" target="_blank"><i class="fab fa-github text-white"></i> GitHub</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" target="_blank"><i class="fas fa-search-dollar text-white"></i> Contract</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://twitter.com/wrldcoin" target="_blank"><i class="fab fa-twitter text-white"></i> Twitter</a></li>
+                <!--<li class="nav-item"><a class="nav-link" href="https://github.com/#" target="_blank"><i class="fab fa-github text-white"></i> GitHub</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" target="_blank"><i class="fas fa-search-dollar text-white"></i> Contract</a></li>-->
             </ul>
         </div>
     </nav>
