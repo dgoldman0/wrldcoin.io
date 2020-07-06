@@ -19,7 +19,7 @@
 
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="https://twitter.com/wrldcoin" target="_blank"><i class="fab fa-twitter text-white"></i> Twitter</a></li>
-                <li class="nav-item"><a class="nav-link" href="/wrld-whiteppaper.pdf" target="_blank"><i class="fas fa-file-contract text-white"></i> Whitepaper</a></li>
+                <li class="nav-item"><a class="nav-link" href="/wrld-whitepaper.pdf" target="_blank"><i class="fas fa-file-contract text-white"></i> Whitepaper</a></li>
                 <!--<li class="nav-item"><a class="nav-link" href="https://github.com/#" target="_blank"><i class="fab fa-github text-white"></i> GitHub</a></li>
                 <li class="nav-item"><a class="nav-link" href="#" target="_blank"><i class="fas fa-search-dollar text-white"></i> Contract</a></li>-->
             </ul>
