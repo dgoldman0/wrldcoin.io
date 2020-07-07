@@ -46,13 +46,10 @@
                                 <div class="row">
                                     <div class="col text-left">
                                         <p class="text-white">
-                                            Welcome to WorldCoin.io - the home of the WrldBuilder Project on TRON. At present, there is only limited information available as we are currently migrating and upgrading our resources to a newer, better codebase.<br />
+                                            Welcome to wrldcoin.io - the home of the World Builder Project on TRON. World Builder seeks to improve the human condition by leveraging blockchain and cryptoasset technology.
+                                            World Builder isn't a single project. We're a think-tank and incubator of ideas and technology which can be enhanced with blockchain. If you're interested in our efforts, please join us in our <a href="https://t.me/tworldbuilder" target="_blank">Telegram Group</a>.<br />
                                             <br />
-                                            The World Builder project is not of a single focus - World Builder is a think-tank and incubator of ideas and technology which can be enhanced with Blockchain - If you're interested in our efforts, please join us in our <a href="https://t.me/tworldbuilder" target="_blank">Telegram Group</a>.<br />
-                                            <br />
-                                            You can also use our mini-games to collect WRLD, the core token of our ecosystem. Or visit the pages of our child projects.
-
-                                            Promote.Health seeks to use the latest technological and scientific advancements to repair our broken public health system.
+                                            You can also use our <a href = "https://worldbuilder.fun">faucets and mini-games</a> to collect WRLD, the core token of our ecosystem. Or visit the pages of our child projects.
                                         </p>
                                     </div>
                                 </div>
