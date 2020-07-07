@@ -68,7 +68,7 @@
                                     <div class="col text-left text-white">
                                       We have a number of projects already in progress. These projects will function as the core ecosystem for World Builder.
                                       <ul>
-                                        <li>Promote.Health</li>
+                                        <li><a href = "https://Promote.Health">Promote.Health</a></li>
                                         <li>Academic Reward Token</li>
                                         <li>Project Outpost</li>
                                       </ul>
