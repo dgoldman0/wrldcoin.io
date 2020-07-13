@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Home | WrldBuilder</title>
+        <title>Home | World Builder</title>
 
         <meta charset="utf8">
-        <meta name="description" content="Write your description here">
-        <meta name="keywords" content="Add, Some, Good, Keywords, Here, Separated, By, Commas, and, Spaces, so, people, on, the, internet, can, find, your, site, more, easily">
+        <meta name="description" content="World Builder is an ecosytsem of projects leveraging blockchain technology to improve the human condition.">
+        <meta name="keywords" content="blockchain, crypto, future, innovation, think-tank, technology">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
         <!-- Bootstrap theme -->
@@ -89,7 +89,5 @@
         <script src="assets/js/tronweb.js"></script>
 
         <!-- Dapp Scripts -->
-        <script src="assets/lib/abi.js"></script>
-        <script src="assets/lib/forging.js"></script>
     </body>
 </html>
