@@ -115,7 +115,7 @@
                                     <div class="col text-center" id="forge_form">
                                         <h1 class="text-white">TokenForge (<a id = "project_link" href = "https://promote.health/public-health-coin/"><span id = "cur2">PHC</span></a>)</h1>
                                         Wallet Balance: <span id = "balance">0</span> <span id = "cur3">PHC</span><br/>
-                                        Forge Price: <span id = "price">0</span> WORLD<br/>
+                                        Forge Price: <span id = "price">0</span> WRLD<br/>
                                         Maximum WORLD Allowed: <span id = "max">0</span><br/>
                                         Estimated number of tokens to forge: <span id = "est">0</span>
                                         <hr/>
