@@ -2,12 +2,17 @@ var addresses = [];
 var names = [];
 var links = [];
 
-addresses.PHC = 'TVxEqHRA9woSA2RvkJJEfmYJJG6NXvbFiV';
 // Old PHC TBWKyAYGvkMwiKaGbZoRXuhJQXQqn2zzrX
-names.PHC = 'Public Health Coin';
-links.PHC = 'https://promote.health/public-health-coin/'
 //addresses.ACW = 'TE6c9Qi4HGHf6j7kcs3AK1snbgQ4bEMEtv';
 //names.ACW = 'Academic Reward';
+
+addresses.PHC = 'TVxEqHRA9woSA2RvkJJEfmYJJG6NXvbFiV';
+addresses.ACW = 'TNhTdHvG8bLkG2g1RCBvrSyTS6yYTsoLn8';
+names.PHC = 'Public Health Coin';
+names.ACW = 'Academic Reward Token';
+
+links.PHC = 'https://promote.health/public-health-coin/';
+links.ACW = 'https://celebrating.science';
 
 const TID = 1002567;
 

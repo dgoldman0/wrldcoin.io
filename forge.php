@@ -71,8 +71,8 @@
                                 <div class="row">
                                     <div class="col text-left">
                                         <p class="text-white">
-                                            <b>We are currently updating the PHC token. You should receive equivalent tokens and a refund for the forging fee within a few days. Contact us if you have any questions</b>.
-                                            <br/>
+                                            <p>PHC is updated and should be working properly. However, please make sure that you are familiar with the forging process and its risks. ACW is now available, but is in earlier testing stages.
+                                            <hr />
                                             This platform lets you take World Builder's WORLD coin, and "burn" it in return for the creation of new tokens from our ecosystem. Those burned tokens will be temporarily locked out of circulation, before eventually being returned to the project team of the associated token.<br />
                                             <br />
                                             <b>Forging:</b> To make forging a bit more like actually mining for things like gold and silver, the forge rate isn't constant. Instead, the cost to forge increases based on how recently the last forge occurred. You may try forging tokens once per hour, up to the current per user forge limit.<br />
