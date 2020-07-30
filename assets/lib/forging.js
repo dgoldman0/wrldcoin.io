@@ -8,12 +8,14 @@ var links = [];
 
 addresses.PHC = 'TVxEqHRA9woSA2RvkJJEfmYJJG6NXvbFiV';
 addresses.ACW = 'TNhTdHvG8bLkG2g1RCBvrSyTS6yYTsoLn8';
+addresses.ARC = 'TWi6mwMMc9PmhXPjFSvedxHHZqi6FWnaqS';
 names.PHC = 'Public Health Coin';
 names.ACW = 'Academic Reward Token';
+names.ARC = 'Arcadium Token';
 
 links.PHC = 'https://promote.health/public-health-coin/';
 links.ACW = 'https://celebrating.science';
-
+links.ARC = 'http://arcadium.fun/';
 const TID = 1002567;
 
 var active = [];
