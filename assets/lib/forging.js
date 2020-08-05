@@ -101,6 +101,9 @@ $(document).ready(function() {
 			});
 			contract.canSmith().call().then(function (res) {
 				if (res) {
+					contract.timeToForge(tronWeb.defaultAddress.base58).call().then(function (res) {
+						$("#forge").prop('disabled', Number(res) != 0);
+					});
 					$("#register_form").hide();
 					$("#forge_form").show();
 
