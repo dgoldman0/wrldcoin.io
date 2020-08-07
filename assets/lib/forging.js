@@ -102,7 +102,11 @@ $(document).ready(function() {
 			contract.canSmith().call().then(function (res) {
 				if (res) {
 					contract.timeToForge(tronWeb.defaultAddress.base58).call().then(function (res) {
-						$("#forge").prop('disabled', Number(res) != 0);
+						let val = Number(res)
+						$("#forge").prop('disabled', val != 0);
+						if (val != NaN && val != 0) {
+							$("#forge").innerText = "Forge Tokens (" + val + "s)";
+						}
 					});
 					$("#register_form").hide();
 					$("#forge_form").show();
