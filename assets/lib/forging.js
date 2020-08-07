@@ -105,7 +105,9 @@ $(document).ready(function() {
 						let val = Number(res)
 						$("#forge").prop('disabled', val != 0);
 						if (val != NaN && val != 0) {
-							$("#forge").text("Forge Tokens (" + val + "s)");
+							$("#forge").text("Forge In " + val + " Seconds");
+						} else {
+							$("#forge").text("Forge Tokens");
 						}
 					});
 					$("#register_form").hide();
