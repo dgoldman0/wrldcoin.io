@@ -36,7 +36,7 @@ $(document).ready(function() {
 	$('#token').change(function() {
 		let token = $(this).val();
 		// A lot of this stuff could be replaced if I could remember how to use AngularJS. Data binding would make token changing a lot easier.
-		$('#addr').text(addresses[token]);
+		$('#addr').html('<a href = "https://tronscan.org/#/token20/' + addresses[token] + '">' + addresses[token] + '</a>');
 		$('#cur').text(token);
 		$('#cur2').text(token);
 		$('#cur3').text(token);

@@ -46,7 +46,7 @@
                 </div>
 
                 <div class='col-md-4'>
-                  <medium class="text-white"><span id="addr">TVxEqHRA9woSA2RvkJJEfmYJJG6NXvbFiV</span></medium><br/>
+                  <medium class="text-white"><span id="addr"><a href = "https://tronscan.org/#/token20/TVxEqHRA9woSA2RvkJJEfmYJJG6NXvbFiV">TVxEqHRA9woSA2RvkJJEfmYJJG6NXvbFiV</a></span></medium><br/>
                   <small class="text-white">Contract Address</small>
                 </div>
 
