@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Forge | WrldBuilder</title>
+        <title>Forge | World Builder</title>
 
         <!-- CHARSET AND VIEWPORT METAS AT THE TOP, BELOW TITLE ALWAYS. -->
         <meta charset="utf8">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
         <!-- NOW SOME DESCRIPTION METAS -->
-        <meta name="description" content="Write your description here">
-        <meta name="keywords" content="Add, Some, Good, Keywords, Here, Separated, By, Commas, and, Spaces, so, people, on, the, internet, can, find, your, site, more, easily">
+        <meta name="description" content="World Builder Token Forge">
+        <meta name="keywords" content="cryptocurrency, crypto, blockchain, money, finance">
 
         <!-- CSS, ICONS AND BOOTSTRAP -->
         <link rel="stylesheet" href="https://bootswatch.com/4/pulse/bootstrap.min.css" />
@@ -40,24 +40,29 @@
             </div>
 
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <select id = "token" name = "token"></select><br />
                     <small class="text-white">Select Token</small>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <h4 class="text-white"><span id="smith-count">0</span></h4>
                     <small class="text-white">Verified Smiths</small>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <h4 class="text-white"><span id="total-supply">0</span>M SUN</h4>
                     <small class="text-white">Total Supply</small>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <h4 class="text-white"><span id="total-wrld">0</span>M SUN</h4>
                     <small class="text-white">WRLD Used</small>
+                </div>
+
+                <div class='col-md-4'>
+                  <h4 class="text-white"><span id="addr">TVxEqHRA9woSA2RvkJJEfmYJJG6NXvbFiV</span></h4>
+                  <small class="text-white">Contract Address</small>
                 </div>
             </div>
             <br />

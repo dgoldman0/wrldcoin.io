@@ -36,6 +36,7 @@ $(document).ready(function() {
 	$('#token').change(function() {
 		let token = $(this).val();
 		// A lot of this stuff could be replaced if I could remember how to use AngularJS. Data binding would make token changing a lot easier.
+		$('#addr').text(addresses[token]);
 		$('#cur').text(token);
 		$('#cur2').text(token);
 		$('#cur3').text(token);
@@ -82,7 +83,7 @@ $(document).ready(function() {
 			var contract = window.tronWeb.contract(abi_forge, active.address);
 			contract.totalSupply().call().then(function (res) {
 				if (Number(res) != NaN) {
-					$("#total-supply").text(res / 1000000);
+					$("#total-supply").text(Math.round(res / 1000000));
 				}
 			});
 			// I can't seem to figure out which order is res and error!! Something's weird.
