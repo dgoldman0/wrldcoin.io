@@ -61,7 +61,7 @@
                 </div>
 
                 <div class='col-md-4'>
-                  <medium class="text-white"><span id="addr">TVxEqHRA9woSA2RvkJJEfmYJJG6NXvbFiV</span></medium>
+                  <medium class="text-white"><span id="addr">TVxEqHRA9woSA2RvkJJEfmYJJG6NXvbFiV</span></medium><br/>
                   <small class="text-white">Contract Address</small>
                 </div>
             </div>
