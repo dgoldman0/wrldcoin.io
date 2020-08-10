@@ -45,6 +45,11 @@
                     <small class="text-white">Select Token</small>
                 </div>
 
+                <div class='col-md-4'>
+                  <medium class="text-white"><span id="addr">TVxEqHRA9woSA2RvkJJEfmYJJG6NXvbFiV</span></medium><br/>
+                  <small class="text-white">Contract Address</small>
+                </div>
+
                 <div class="col-md-2">
                     <h4 class="text-white"><span id="smith-count">0</span></h4>
                     <small class="text-white">Verified Smiths</small>
@@ -58,11 +63,6 @@
                 <div class="col-md-2">
                     <h4 class="text-white"><span id="total-wrld">0</span>M SUN</h4>
                     <small class="text-white">WRLD Used</small>
-                </div>
-
-                <div class='col-md-4'>
-                  <medium class="text-white"><span id="addr">TVxEqHRA9woSA2RvkJJEfmYJJG6NXvbFiV</span></medium><br/>
-                  <small class="text-white">Contract Address</small>
                 </div>
             </div>
             <br />
