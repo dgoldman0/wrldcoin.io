@@ -76,9 +76,7 @@
                                 <div class="row">
                                     <div class="col text-left">
                                         <p class="text-white">
-                                            <p>PHC is updated and should be working properly. However, please make sure that you are familiar with the forging process and its risks. ACW is now available, but is in earlier testing stages.
-                                            <hr />
-                                            This platform lets you take World Builder's WORLD coin, and "burn" it in return for the creation of new tokens from our ecosystem. Those burned tokens will be temporarily locked out of circulation, before eventually being returned to the project team of the associated token.<br />
+                                            This platform lets you take World Builder's WORLD coin, and "burn" it in return for the creation of new tokens from our ecosystem. Those burned tokens will be temporarily locked out of circulation, before eventually being returned to the project team of the associated token. Think of WRLD as the raw material needed to forge other tokens.<br />
                                             <br />
                                             <b>Forging:</b> To make forging a bit more like actually mining for things like gold and silver, the forge rate isn't constant. Instead, the cost to forge increases based on how recently the last forge occurred. You may try forging tokens once per hour, up to the current per user forge limit.<br />
                                             <br />
