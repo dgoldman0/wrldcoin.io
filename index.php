@@ -68,9 +68,10 @@
                                     <div class="col text-left text-white">
                                       We have a number of projects already in progress. These projects will function as the core ecosystem for World Builder.
                                       <ul>
-                                        <li><a href = "https://Promote.Health">Promote.Health</a></li>
-                                        <li>Academic Reward Token</li>
-                                        <li>Project Outpost</li>
+                                        <li><a href = "https://Promote.Health">Promote.Health</a> is a foundation dedicated to improving public health, leveraging the PHC monetizing token.</li>
+                                        <li>Academic Reward Token (ACW) is a token that monetizes the concept of research and development itself.</li>
+                                        <li>Project Outpost, an operation that will make it easier to barter goods, and hopefully largely replace expensive pawn shops and loans.</li>
+                                        <li>Arcadium, a virtual arcade project along with the ARC token, which monetizes entertainment.</li>
                                       </ul>
                                     </div>
                                 </div>
