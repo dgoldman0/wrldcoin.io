@@ -49,7 +49,7 @@
                                             Welcome to wrldcoin.io - the home of the World Builder Project on TRON. World Builder seeks to improve the human condition by leveraging blockchain and cryptoasset technology.
                                             World Builder isn't a single project. We're a think-tank and incubator of ideas and technology which can be enhanced with blockchain. If you're interested in our efforts, please join us in our <a href="https://t.me/tworldbuilder" target="_blank">Telegram Group</a>.<br />
                                             <br />
-                                            You can also use our <a href = "https://worldbuilder.fun">faucets and mini-games</a> to collect WRLD, the core token of our ecosystem. Or visit the pages of our child projects.
+                                            You can also use our <a href = "https://worldbuilder.fun">faucets and mini-games</a> to collect WRLD, the core token of our ecosystem. Or visit the pages of our child projects. After collecting WRLD, you can use it to compete to win TRX prizes in the <a href = "https://worldbuilder.fun/burner.php">burner games</a>. 
                                         </p>
                                     </div>
                                 </div>
