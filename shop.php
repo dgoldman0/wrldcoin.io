@@ -57,7 +57,7 @@
 
                 <div class="col-md-6">
                     <div class="card glassPanel border-light rcAll">
-                        <div class="card-header glassPanel text-white rcTop">Projects</div>
+                        <div class="card-header glassPanel text-white rcTop">Shop Stats</div>
                         <div class="card-body">
                             <div class="container">
                                 <div class="row">
@@ -72,6 +72,16 @@
             </div>
         </div>
 
+        <div class="container">
+            <div class="row jumbotron glassPanel rcAll">
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-left">
+                            <h1 class="text-white">Items</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <!-- Project Dependencies -->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
