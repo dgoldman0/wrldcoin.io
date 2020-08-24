@@ -46,6 +46,7 @@
                                 <div class="row">
                                     <div class="col text-left">
                                         <p class="text-white">
+                                          Welcome to the very early prototype WRLD Shop
                                         </p>
                                     </div>
                                 </div>
@@ -80,7 +81,7 @@
                     <div class="row">
                         <div class="col text-left">
                             <h1 class="text-white">Items</h1>
-                            <table class="table">
+                            <table class="table text-white">
                               <thead>
                                 <tr>
                                   <th scope="col">#</th>
