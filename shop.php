@@ -73,7 +73,7 @@
             </div>
         </div>
 
-        <br /><br /><br /><br /><br />
+        <br /><br /><br />
 
         <div class="container">
             <div class="row jumbotron glassPanel rcAll">
@@ -84,30 +84,26 @@
                             <table class="table text-white">
                               <thead>
                                 <tr>
-                                  <th scope="col">#</th>
-                                  <th scope="col">First</th>
-                                  <th scope="col">Last</th>
-                                  <th scope="col">Handle</th>
+                                  <th scope="col">Item</th>
+                                  <th scope="col">Description</th>
+                                  <th scope="col">Unit Price</th>
+                                  <th scope="col">Availability</th>
+                                  <th scope="col"></th>
                                 </tr>
                               </thead>
                               <tbody>
                                 <tr>
-                                  <th scope="row">1</th>
-                                  <td>Mark</td>
-                                  <td>Otto</td>
-                                  <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">2</th>
-                                  <td>Jacob</td>
-                                  <td>Thornton</td>
-                                  <td>@fat</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">3</th>
-                                  <td>Larry</td>
-                                  <td>the Bird</td>
-                                  <td>@twitter</td>
+                                  <th scope="row">Sample Item</th>
+                                  <td>A Sample Item</td>
+                                  <td>0.1 TRX</td>
+                                  <td>10/</td>
+                                  <td>
+                                    <form>
+                                        <div class="form-group">
+                                            <center><button type = "button" class = "btn btn-primary" id = "add-item-id">Add to Cart</button></center>
+                                        </div>
+                                    </form>
+                                  </td>
                                 </tr>
                               </tbody>
                             </table>
