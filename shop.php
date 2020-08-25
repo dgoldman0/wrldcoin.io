@@ -63,6 +63,20 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col text-left text-white">
+                                      <table class="table text-white">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Items Sold (24hrs)</th>
+                                            <th scope="col">Sales Volume (24hrs)</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>50</td>
+                                            <td>100M WRLD</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
                                     </div>
                                 </div>
                             </div>
