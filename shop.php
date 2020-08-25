@@ -46,7 +46,7 @@
                                 <div class="row">
                                     <div class="col text-left">
                                         <p class="text-white">
-                                          Welcome to the very early prototype WRLD Shop
+                                          Welcome to the very early prototype WRLD Shop. This site is a mockup. <b>Please do not try to place any orders</b>.
                                         </p>
                                     </div>
                                 </div>
@@ -93,10 +93,10 @@
                               </thead>
                               <tbody>
                                 <tr>
-                                  <th scope="row">Sample Item</th>
-                                  <td>A Sample Item</td>
-                                  <td>0.1 TRX</td>
-                                  <td>10/</td>
+                                  <th scope="row">WRLD Coin</th>
+                                  <td>1 oz. silver collector's coin.</td>
+                                  <td>2M WRLD</td>
+                                  <td>10</td>
                                   <td>
                                     <form>
                                         <div class="form-group">
