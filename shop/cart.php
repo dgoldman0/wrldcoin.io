@@ -119,19 +119,6 @@
                                     </form>
                                   </td>
                                 </tr>
-                                <tr>
-                                  <th scope="row">Health Gift Certificate</th>
-                                  <td>50 USD Gift Certificate for Health Stuff</td>
-                                  <td>150K PHC</td>
-                                  <td>10</td>
-                                  <td>
-                                    <form>
-                                        <div class="form-group">
-                                            <center><button type = "button" class = "btn btn-primary" id = "buy-now-id">Instabuy</button></center>
-                                        </div>
-                                    </form>
-                                  </td>
-                                </tr>
                               </tbody>
                             </table>
                       </div>
