@@ -114,7 +114,7 @@
                                   <td>
                                     <form>
                                         <div class="form-group">
-                                            <center><button type = "button" class = "btn btn-primary" id = "add-item-id">Add to Cart</button></center>
+                                            <center><button type = "button" class = "btn btn-primary" onclick="addToCart('phc-coin-01', 1)">Add to Cart</button></center>
                                         </div>
                                     </form>
                                   </td>
@@ -127,7 +127,7 @@
                                   <td>
                                     <form>
                                         <div class="form-group">
-                                            <center><button type = "button" class = "btn btn-primary" id = "buy-now-id">Instabuy</button></center>
+                                            <center><button type = "button" class = "btn btn-primary" onclick="instaBuy('gift-cert-50', 1, 'PHC', 150000000000)">Instabuy</button></center>
                                         </div>
                                     </form>
                                   </td>
