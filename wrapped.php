@@ -30,6 +30,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col text-left">
+                            <h1 class="text-white">Wrapped WRLD Conversion</h1>
+                            <p class="text-success">Convert between our TRC-10 token and its wrapped version for use in smart contracts.</p>
                         </div>
                     </div>
                 </div>
@@ -38,13 +40,12 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="card glassPanel border-light rcAll">
-                        <div class="card-header glassPanel text-white rcTop">Introduction</div>
+                        <div class="card-header glassPanel text-white rcTop">Wrap</div>
                         <div class="card-body">
                             <div class="container">
                                 <div class="row">
                                     <div class="col text-left">
                                         <p class="text-white">
-
                                         </p>
                                     </div>
                                 </div>
@@ -54,6 +55,23 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-6">
+                <div class="card glassPanel border-light rcAll">
+                    <div class="card-header glassPanel text-white rcTop">Unwrap</div>
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col text-left">
+                                    <p class="text-white">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer glassPanel rcBottom"></div>
+                </div>
+            </div>
+        </div>
         </div>
 
         <!-- Project Dependencies -->
