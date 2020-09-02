@@ -38,6 +38,26 @@
             </div>
 
             <div class="row">
+                <div class="col-md-12">
+                  <div class="card glassPanel border-light rcAll">
+                      <div class="card-header glassPanel text-white rcTop">Status</div>
+                      <div class="card-body">
+                          <div class="container">
+                              <div class="row">
+                                  <div class="col text-left">
+                                      <p class="text-white">
+                                        Current Supply of Wrapped WRLD: 
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-footer glassPanel rcBottom"></div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="row">
                 <div class="col-md-6">
                     <div class="card glassPanel border-light rcAll">
                         <div class="card-header glassPanel text-white rcTop">Wrap</div>
