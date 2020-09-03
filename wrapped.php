@@ -46,7 +46,7 @@
                               <div class="row">
                                   <div class="col text-left">
                                       <p class="text-white">
-                                        Current Supply of Wrapped WRLD: 
+                                        Current Supply of Wrapped WRLD: <span id = "wwld-supply">0 WWLD</span>
                                       </p>
                                   </div>
                               </div>
@@ -57,34 +57,36 @@
                 </div>
             </div>
 
+            <br />
+
             <div class="row">
                 <div class="col-md-6">
                     <div class="card glassPanel border-light rcAll">
-                        <div class="card-header glassPanel text-white rcTop">Wrap</div>
+                        <div class="card-header glassPanel text-white rcTop">Wrap Some WRLD</div>
                         <div class="card-body">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col text-left">
-                                        <p class="text-white">
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                          <div class="row container text-white">
+                              <div class="col-md-3">
+                                <input type="number" min="0" class="form-control rcAll" id="amtWrap">
+                              </div>
+
+                              <div class='col-md-3'>
+                              </div>
+                          </div>
                         </div>
                         <div class="card-footer glassPanel rcBottom"></div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card glassPanel border-light rcAll">
-                        <div class="card-header glassPanel text-white rcTop">Unwrap</div>
+                        <div class="card-header glassPanel text-white rcTop">Unwrap Some WRLD</div>
                         <div class="card-body">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col text-left">
-                                        <p class="text-white">
-                                        </p>
-                                    </div>
-                                </div>
+                            <div class="row container text-white">
+                              <div class="col-md-3">
+                                <input type="number" min="0" class="form-control rcAll" id="amtUnwrap">
+                              </div>
+
+                              <div class='col-md-3'>
+                              </div>
                             </div>
                         </div>
                         <div class="card-footer glassPanel rcBottom"></div>
