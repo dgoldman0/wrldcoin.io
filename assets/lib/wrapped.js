@@ -26,17 +26,19 @@ $(document).ready(function() {
 
   $('#wrap').click(function() {
       var contract = window.tronWeb.contract(abi_wrapped, contractAddress);
-      var amt = $('#amtWrap');
+      var amt = $('#amtWrap').val();
       console.log(amt * 1000000);
-      if (Number(amt) != NaN)
+      if (Number(amt) != NaN) {
         contract.wrap().send({shouldPollResponse: false, callValue: amt * 1000000});
-    }  );
+      }
+  });
 
   $('#unwrap').click(function() {
     var contract = window.tronWeb.contract(abi_wrapped, contractAddress);
-    var amt = $('#amtUnwrap');
-    if (Number(amt) != NaN)
+    var amt = $('#amtUnwrap').val();
+    if (Number(amt) != NaN) {
       contract.unwrap().send({shouldPollResponse: false, callValue: amt * 1000000});
+    }
   });
 
 	// I should make the timer halt and wait until all checks are done, but we'll see.
