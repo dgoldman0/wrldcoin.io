@@ -46,7 +46,7 @@
                               <div class="row">
                                   <div class="col text-left">
                                       <p class="text-white">
-                                        Current Supply of Wrapped WRLD: <span id = "wwld-supply">0</span> WRLD
+                                        Current Supply of Wrapped WRLD: <span id = "wwrld-supply">0</span> WRLD
                                       </p>
                                   </div>
                               </div>

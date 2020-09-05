@@ -40,7 +40,7 @@ $(document).ready(function() {
 	// I should make the timer halt and wait until all checks are done, but we'll see.
 	var run = function() {
     contractGlobal.totalSupply().call().then(function (res) {
-			$('#wwld-supply').text(res);
+			$('#wwrld-supply').text(res);
 		});
   };
   run();
