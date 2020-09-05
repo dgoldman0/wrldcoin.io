@@ -25,14 +25,14 @@ $(document).ready(function() {
 	var contractGlobal = tronWebGlobal.contract(abi_wrapped, contractAddress);
 
   $('#wrap').click(function() {
-      var contract = window.tronWeb.contract(abi_wrapped, active.address);
+      var contract = window.tronWeb.contract(abi_wrapped, contractAddress);
       var amt = $('#amtWrap');
       if (Number(amt) != NaN)
         contract.wrap().send({shouldPollResponse: false, callValue: amt * 1000000});
     }  );
 
   $('#unwrap').click(function() {
-    var contract = window.tronWeb.contract(abi_wrapped, active.address);
+    var contract = window.tronWeb.contract(abi_wrapped, contractAddress);
     var amt = $('#amtUnwrap');
     if (Number(amt) != NaN)
       contract.unwrap().send({shouldPollResponse: false, callValue: amt * 1000000});
