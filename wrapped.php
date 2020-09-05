@@ -70,7 +70,7 @@
                               </div>
 
                               <div class='col-md-6'>
-                                <button type = "button" class = "btn btn-block btn-sm btn-primary rcAll" id = "wrap" onclick = "wrap();">WRAP</button>
+                                <button type = "button" class = "btn btn-block btn-sm btn-primary rcAll" id = "wrap">WRAP</button>
                               </div>
                           </div>
                         </div>
@@ -87,7 +87,7 @@
                               </div>
 
                               <div class='col-md-6'>
-                                <button type = "button" class = "btn btn-block btn-sm btn-primary rcAll" id = "unwrap" onclick = "unwrap();">UNWRAP</button>
+                                <button type = "button" class = "btn btn-block btn-sm btn-primary rcAll" id = "unwrap">UNWRAP</button>
                               </div>
                             </div>
                         </div>
