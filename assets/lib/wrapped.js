@@ -1,4 +1,4 @@
-var contractAddress = '';
+var contractAddress = 'TUNyaT9bPzhhLJpDnHxR36A4zo1Y3TbQF4';
 const TID = 1002567;
 
 $(document).ready(function() {
@@ -21,7 +21,21 @@ $(document).ready(function() {
 	  privateKey: burnerKey,
 	});
 
-	var contractGlobal = tronWebGlobal.contract(abi, contractAddress);
+	var contractGlobal = tronWebGlobal.contract(abi_wrapped, contractAddress);
+
+  function wrap() {
+    var contract = window.tronWeb.contract(abi_forge, active.address);
+    var amt = $('#amtWrap');
+    if (Number(amt) != NaN)
+      contract.wrap().send({shouldPollResponse: false, callValue: amt * 1000000});
+  }
+
+  function unwrap() {
+    var contract = window.tronWeb.contract(abi_forge, active.address);
+    var amt = $('#amtUnwrap');
+    if (Number(amt) != NaN)
+      contract.unwrap().send({shouldPollResponse: false, callValue: amt * 1000000});
+  }
 
 	// I should make the timer halt and wait until all checks are done, but we'll see.
 	var run = function() {
@@ -29,4 +43,6 @@ $(document).ready(function() {
 			$('#wwld-supply').text(res);
 		});
   };
+  run();
+  setInterval(run, 1000);
 });
