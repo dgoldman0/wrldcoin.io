@@ -14,6 +14,7 @@ $(document).ready(function() {
 	    $('#connection-status').html('Connected to Tron');
 	  return true;
 	}
+
   // Use burner address to allow Tronweb to view basic information even when not logged in
 	const burnerKey = 'c4e8f5a69efb674ba5ed4f0c53cfef0f90ff6134aba7417bfffcf3c7a2b13524'; // This is a burner account - it should not ever be used!
 	var tronWebGlobal = new TronWeb({
@@ -23,12 +24,12 @@ $(document).ready(function() {
 
 	var contractGlobal = tronWebGlobal.contract(abi_wrapped, contractAddress);
 
-  $('#wrap').click(function {
-    var contract = window.tronWeb.contract(abi_forge, active.address);
-    var amt = $('#amtWrap');
-    if (Number(amt) != NaN)
-      contract.wrap().send({shouldPollResponse: false, callValue: amt * 1000000});
-  });
+  $('#wrap').click(function() {
+      var contract = window.tronWeb.contract(abi_forge, active.address);
+      var amt = $('#amtWrap');
+      if (Number(amt) != NaN)
+        contract.wrap().send({shouldPollResponse: false, callValue: amt * 1000000});
+    }  );
 
   $('#unwrap').click(function() {
     var contract = window.tronWeb.contract(abi_forge, active.address);
