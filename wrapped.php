@@ -46,7 +46,7 @@
                               <div class="row">
                                   <div class="col text-left">
                                       <p class="text-white">
-                                        Current Supply of Wrapped WRLD: <span id = "wwld-supply">0 WWLD</span>
+                                        Current Supply of Wrapped WRLD: <span id = "wwld-supply">0</span> WRLD
                                       </p>
                                   </div>
                               </div>
@@ -65,11 +65,11 @@
                         <div class="card-header glassPanel text-white rcTop">Wrap Some WRLD</div>
                         <div class="card-body">
                           <div class="row container text-white">
-                              <div class="col-md-3">
+                              <div class="col-md-6">
                                 <input type="number" min="0" class="form-control rcAll" id="amtWrap">
                               </div>
 
-                              <div class='col-md-3'>
+                              <div class='col-md-6'>
                                 <button type = "button" class = "btn btn-block btn-sm btn-primary rcAll" id = "wrap" onclick = "wrap();">WRAP</button>
                               </div>
                           </div>
@@ -82,11 +82,11 @@
                         <div class="card-header glassPanel text-white rcTop">Unwrap Some WRLD</div>
                         <div class="card-body">
                             <div class="row container text-white">
-                              <div class="col-md-3">
+                              <div class="col-md-6">
                                 <input type="number" min="0" class="form-control rcAll" id="amtUnwrap">
                               </div>
 
-                              <div class='col-md-3'>
+                              <div class='col-md-6'>
                                 <button type = "button" class = "btn btn-block btn-sm btn-primary rcAll" id = "unwrap" onclick = "unwrap();">UNWRAP</button>
                               </div>
                             </div>
@@ -105,5 +105,7 @@
         <script src="assets/js/tronweb.js"></script>
 
         <!-- Dapp Scripts -->
+        <script src="assets/lib/wrapped.js"></script>
+        <script src="assets/lib/abi_wrapped.js"></script>
     </body>
 </html>
