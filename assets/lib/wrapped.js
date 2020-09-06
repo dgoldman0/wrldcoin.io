@@ -1,4 +1,4 @@
-var contractAddress = 'TUNyaT9bPzhhLJpDnHxR36A4zo1Y3TbQF4';
+var contractAddress = 'TEqZx8bB3K4aUU6gEWug6KSJHZL8JDxZwG';
 const TID = 1002567;
 
 $(document).ready(function() {
@@ -37,13 +37,14 @@ $(document).ready(function() {
     var contract = window.tronWeb.contract(abi_wrapped, contractAddress);
     var amt = $('#amtUnwrap').val();
     if (Number(amt) != NaN) {
+      contract.unwrap(amt * 1000000).call();
     }
   });
 
 	// I should make the timer halt and wait until all checks are done, but we'll see.
 	var run = function() {
     contractGlobal.totalSupply().call().then(function (res) {
-			$('#wwrld-supply').text(res);
+			$('#wwrld-supply').text(res / 1000000);
 		});
   };
   run();
