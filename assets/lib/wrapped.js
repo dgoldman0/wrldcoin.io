@@ -37,7 +37,7 @@ $(document).ready(function() {
     var contract = window.tronWeb.contract(abi_wrapped, contractAddress);
     var amt = $('#amtUnwrap').val();
     if (Number(amt) != NaN) {
-      contract.unwrap(amt * 1000000).call();
+      contract.unwrap(amt * 1000000).send();
     }
   });
 
