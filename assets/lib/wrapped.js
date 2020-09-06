@@ -27,9 +27,8 @@ $(document).ready(function() {
   $('#wrap').click(function() {
       var contract = window.tronWeb.contract(abi_wrapped, contractAddress);
       var amt = $('#amtWrap').val();
-      console.log(amt * 1000000);
       if (Number(amt) != NaN) {
-        contract.wrap().send({shouldPollResponse: false, callValue: amt * 1000000, tokenId: TID});
+        contract.wrap().send({shouldPollResponse: false, tokenValue: amt * 1000000, tokenId: TID});
       }
   });
 
