@@ -28,16 +28,24 @@ $(document).ready(function() {
       var contract = window.tronWeb.contract(abi_wrapped, contractAddress);
       var amt = $('#amtWrap').val();
       if (Number(amt) != NaN) {
-        contract.wrap().send({shouldPollResponse: false, tokenValue: amt * 1000000, tokenId: TID});
-      }
+        if (amt > 0)
+          contract.wrap().send({shouldPollResponse: false, tokenValue: amt * 1000000, tokenId: TID});
+        else
+          window.alert("Amount must be greater than zero!");
+
+      $('#amtWrap').val('');
   });
 
   $('#unwrap').click(function() {
     var contract = window.tronWeb.contract(abi_wrapped, contractAddress);
     var amt = $('#amtUnwrap').val();
     if (Number(amt) != NaN) {
-      contract.unwrap(amt * 1000000).send();
-    }
+      if (amt > 0)
+        contract.unwrap(amt * 1000000).send();
+      else
+        window.alert("Amount must be greater than zero!");
+
+      $('#amtWrap').val('');
   });
 
 	// I should make the timer halt and wait until all checks are done, but we'll see.
