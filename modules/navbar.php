@@ -15,7 +15,7 @@
                     </div>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="forge.php"><i class="fas fa-fire-alt text-white"></i> Forge</a></li>
-                <li class="nav-item"><a class="nav-link" href="wrapped.php"><i class="fas arrows-alt-h text-white"></i> WWRLD</a></li>
+                <li class="nav-item"><a class="nav-link" href="wrapped.php"><i class="fas fa-arrows-alt-h text-white"></i> WWRLD</a></li>
             </ul>
 
             <ul class="navbar-nav ml-auto">
