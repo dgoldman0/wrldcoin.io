@@ -45,7 +45,7 @@ $(document).ready(function() {
       else
         window.alert("Amount must be greater than zero!");
     }
-    $('#amtWrap').val('');
+    $('#amtUnwrap').val('');
   });
 
 	// I should make the timer halt and wait until all checks are done, but we'll see.
