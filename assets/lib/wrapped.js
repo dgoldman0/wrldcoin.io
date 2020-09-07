@@ -32,7 +32,7 @@ $(document).ready(function() {
           contract.wrap().send({shouldPollResponse: false, tokenValue: amt * 1000000, tokenId: TID});
         else
           window.alert("Amount must be greater than zero!");
-
+      }
       $('#amtWrap').val('');
   });
 
@@ -44,8 +44,8 @@ $(document).ready(function() {
         contract.unwrap(amt * 1000000).send();
       else
         window.alert("Amount must be greater than zero!");
-
-      $('#amtWrap').val('');
+    }
+    $('#amtWrap').val('');
   });
 
 	// I should make the timer halt and wait until all checks are done, but we'll see.
