@@ -8,7 +8,7 @@
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-toolbox text-white"></i> Menu</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-toolbox text-white"></i> External</a>
                     <div class="dropdown-menu bg-primary" aria-labelledby="dropdown04">
                         <a class="dropdown-item text-white" href="http://worldbuilder.fun/"> Mini Games</a>
                         <a class="dropdown-item text-white" href="https://nolex.org/main/WRLDTRX.html?ref=5f27039c6766fa6f943137be"> WRLD on NoleX</a>

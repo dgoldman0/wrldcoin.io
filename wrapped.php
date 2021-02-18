@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Home | World Builder</title>
+        <title>Token Wrapper | World Builder</title>
 
         <meta charset="utf8">
         <meta name="description" content="World Builder is an ecosytsem of projects leveraging blockchain technology to improve the human condition.">

@@ -1,3 +1,8 @@
+<!--
+I want to allow someone to enter a custom token address. That one will be easy to implement through a selector option "custom" which temporarily adds. I also want to create a whitelist system.
+
+It might also be interesting to allow people to create their own contract without coding, using a basic form to enter some details, kind of like JustSwap. I'd have to learn how to custom compile code though. 
+-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
