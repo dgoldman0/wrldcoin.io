@@ -20,10 +20,10 @@
         <script src="https://kit.fontawesome.com/f352960784.js" crossorigin="anonymous"></script>
 
         <!-- OpenGraph -->
-        <meta property="og: url" content="https://wrldcoin.io/charity/rai_odette.php" />
-        <meta property="og: description" content= "World Builder charity drive to support those in the Philippines impacted by Super Typhoon Rai/Odette."/>
+        <meta property = "og:url" content="https://wrldcoin.io/charity/rai_odette.php" />
+        <meta property = "og:description" content= "World Builder charity drive to support those in the Philippines impacted by Super Typhoon Rai/Odette."/>
         <meta property = "og:type" contet = "website" />
-        <meta property = "og:image" contet = "website" />
+        <meta property = "og:image" contet = "https://wrldcoin.io/assets/img/logo.png" />
     </head>
 
     <body class="wallpaper">
