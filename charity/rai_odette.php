@@ -60,12 +60,14 @@
 
                 <div class="col-md-6">
                     <div class="card glassPanel border-light rcAll">
-                        <div class="card-header glassPanel text-white rcTop">Objective</div>
+                        <div class="card-header glassPanel text-white rcTop">Objective and Instructions</div>
                         <div class="card-body">
                             <div class="container">
                                 <div class="row">
                                     <div class="col text-center">
                                       We will donate $100 per 1 million $PHC minted, up to $5,000 to Philippines charities supporting the recovery from Super Typhoon Rai/Odette. The marked supply is 25,354,494 $PHC. No minting will be counted for donations past 11:59PM EST on 12/26/21.
+                                      <hr/>
+                                      To support the effort, you will need to be a registered smith for $PHC in the <a href = "https://wrldcoin.io/forge.php">forge</a> and have WRLD to forge new $PHC. Feel free to stop by our <a href = "https://t.me/tworldbuilder">Telegram channel</a> to learn more.
                                     </div>
                                 </div>
                             </div>
@@ -79,10 +81,5 @@
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/tronweb.js"></script>
-
-        <!-- Dapp Scripts -->
-        <script src="assets/lib/abi.js"></script>
-        <script src="assets/lib/forging.js"></script>
     </body>
 </html>
