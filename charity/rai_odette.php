@@ -22,6 +22,12 @@
         <meta property = "og:type" content = "website" />
         <meta property = "og:image" content = "https://wrldcoin.io/assets/img/logo.png" />
 
+        <meta name="twitter:card" content="Support those affected by OdettePH" />
+        <meta name="twitter:site" content="@wrldcoin" />
+        <meta name="twitter:title" content="World Buidler Charity Support - OdettePH Relief" />
+        <meta name="twitter:description" content="Help World Builder support those affected by Super Typhoon Rai/Odette" />
+        <meta name="twitter:image" content="https://wrldcoin.io/assets/img/logo.png" />
+
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/f352960784.js" crossorigin="anonymous"></script>
     </head>
