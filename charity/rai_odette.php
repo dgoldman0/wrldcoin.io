@@ -72,7 +72,7 @@
                                 <div class="row">
                                     <div class="col text-center">
                                       <p class="text-white">
-                                      We will donate 100 USD per 1 million $PHC minted, up to $5,000 to Philippines charities supporting the recovery from Super Typhoon Rai/Odette. The marked supply is 25,354,494 $PHC. No minting will be counted for donations past 11:59PM EST on 12/26/21.
+                                      We will donate 100 USD per 1 million $PHC minted, up to $5,000 to Philippines charities supporting the recovery from Super Typhoon Rai/Odette. The marked supply is 25,354,494 $PHC. No minting will be counted for donations past 11:59PM EST on 12/31/21.
                                      </p>
                                       <hr/>
                                       <p class="text-white">
