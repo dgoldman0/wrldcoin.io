@@ -13,8 +13,8 @@
 
         <!-- CSS, ICONS AND BOOTSTRAP -->
         <link rel="stylesheet" href="https://bootswatch.com/4/pulse/bootstrap.min.css" />
-        <link rel="stylesheet" href="assets/css/world.css" />
-        <link rel="icon" type="image/png" href="assets/img/etc.png">
+        <link rel="stylesheet" href="/assets/css/world.css" />
+        <link rel="icon" type="image/png" href="/assets/img/etc.png">
 
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/f352960784.js" crossorigin="anonymous"></script>
@@ -48,7 +48,7 @@
                                 <div class="row">
                                     <div class="col text-left">
                                         <p class="text-white">
-                                          Super Typhoon Rai, locally named Odette, hit the Philippines on December 16, 2021, shortly after being upgraded to category 5 strength. This storm was one of the most powerful storms this year, and has caused significant damage to multiple regions in the Philippines. Many people had to evacuate. The storm caused significant property damage, and loss of life. Damage to local infrastructure, including the power grid, have made cleanup efforst difficult. To support the effort, World Builder is announcing its first charity support drive, utilizing its branch project, Promote Health and the Forge System.                                    
+                                          Super Typhoon Rai, locally named Odette, hit the Philippines on December 16, 2021, shortly after being upgraded to category 5 strength. This storm was one of the most powerful storms this year, and has caused significant damage to multiple regions in the Philippines. Many people had to evacuate. The storm caused significant property damage, and loss of life. Damage to local infrastructure, including the power grid, have made cleanup efforst difficult. To support the effort, World Builder is announcing its first charity support drive, utilizing its branch project, Promote Health and the Forge System.
                                         </p>
                                     </div>
                                 </div>
