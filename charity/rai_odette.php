@@ -12,18 +12,18 @@
         <meta name="keywords" content="cryptocurrency, crypto, blockchain, money, finance">
 
         <!-- CSS, ICONS AND BOOTSTRAP -->
-        <link rel="stylesheet" href="https://bootswatch.com/4/pulse/booststrap.min.css" />
+        <link rel="stylesheet" href="https://bootswatch.com/4/pulse/bootstrap.min.css" />
         <link rel="stylesheet" href="/assets/css/world.css" />
-        <link rel="icon" type="image/png" href="https://wrldcoin.io/assets/img/logo.png" />
+        <link rel="icon" type="image/png" href="/assets/img/etc.png">
+
+        <!-- OpenGraph -->
+        <meta property = "og:url" content = "https://wrldcoin.io/charity/rai_odette.php" />
+        <meta property = "og:description" content = "World Builder charity drive to support those in the Philippines impacted by Super Typhoon Rai/Odette."/>
+        <meta property = "og:type" contet = "website" />
+        <meta property = "og:image" contet = "https://wrldcoin.io/assets/img/logo.png" />
 
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/f352960784.js" crossorigin="anonymous"></script>
-
-        <!-- OpenGraph -->
-        <meta property = "og:url" content="https://wrldcoin.io/charity/rai_odette.php" />
-        <meta property = "og:description" content= "World Builder charity drive to support those in the Philippines impacted by Super Typhoon Rai/Odette."/>
-        <meta property = "og:type" contet = "website" />
-        <meta property = "og:image" contet = "https://wrldcoin.io/assets/img/logo.png" />
     </head>
 
     <body class="wallpaper">
