@@ -91,6 +91,24 @@
                     </div>
                 </div>
             </div>
+            <div class = "row">
+              <div class="col-md-12">
+                  <div class="card glassPanel border-light rcAll">
+                      <div class="card-header glassPanel text-white rcTop">Drugstores Association of the Philippines</div>
+                      <div class="card-body">
+                          <div class="container">
+                              <div class="row">
+                                  <div class="col text-center">
+                                    <p>The Drugstores Association of the Philippines is a national organization with chapters in a number of regions. They are coordinating with their branch in the Visayas to provide water, food, and other necessities to people whose lives were upended by the typhoon.</p>
+                                    <hr/>
+                                    In the first round of donations, we were able to support the organization with a $300 donation: roughly 15,000 pesos. 
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
         </div>
 
         <!-- Project Dependencies -->
