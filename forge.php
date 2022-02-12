@@ -1,7 +1,7 @@
 <!--
 I want to allow someone to enter a custom token address. That one will be easy to implement through a selector option "custom" which temporarily adds. I also want to create a whitelist system.
 
-It might also be interesting to allow people to create their own contract without coding, using a basic form to enter some details, kind of like JustSwap. I'd have to learn how to custom compile code though. 
+It might also be interesting to allow people to create their own contract without coding, using a basic form to enter some details, kind of like JustSwap. I'd have to learn how to custom compile code though.
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -67,7 +67,7 @@ It might also be interesting to allow people to create their own contract withou
 
                 <div class="col-md-2">
                     <h4 class="text-white"><span id="total-wrld">0</span>M SUN</h4>
-                    <small class="text-white">WRLD Used</small>
+                    <small class="text-white">KEM Used</small>
                 </div>
             </div>
             <br />
@@ -124,7 +124,7 @@ It might also be interesting to allow people to create their own contract withou
                                         <h1 class="text-white">TokenForge (<a id = "project_link" href = "https://promote.health/public-health-coin/"><span id = "cur2">PHC</span></a>)</h1>
                                         Wallet Balance: <span id = "balance">0</span> <span id = "cur3">PHC</span><br/>
                                         Forge Price: <span id = "price">0</span> WRLD<br/>
-                                        Maximum WORLD Allowed: <span id = "max">0</span><br/>
+                                        Maximum KEM Allowed: <span id = "max">0</span><br/>
                                         Estimated number of tokens to forge: <span id = "est">0</span>
                                         <hr/>
                                         <input type="number" min="0" class="form-control rcAll" id="amtWRLD">

@@ -2,25 +2,16 @@ var addresses = [];
 var names = [];
 var links = [];
 
-// Old PHC TBWKyAYGvkMwiKaGbZoRXuhJQXQqn2zzrX
-//addresses.ACW = 'TE6c9Qi4HGHf6j7kcs3AK1snbgQ4bEMEtv';
-//names.ACW = 'Academic Reward';
+addresses.CMD = '';
+names.CMD = 'CMD Token';
 
-addresses.PHC = 'TVxEqHRA9woSA2RvkJJEfmYJJG6NXvbFiV';
-addresses.ACW = 'TNhTdHvG8bLkG2g1RCBvrSyTS6yYTsoLn8';
-addresses.ARC = 'TWi6mwMMc9PmhXPjFSvedxHHZqi6FWnaqS';
-names.PHC = 'Public Health Coin';
-names.ACW = 'Academic Reward Token';
-names.ARC = 'Arcadium Token';
-
-links.PHC = 'https://promote.health/public-health-coin/';
-links.ACW = 'https://celebrating.science';
-links.ARC = 'http://arcadium.fun/';
-const TID = 1002567;
+links.CMD = 'https://wrldcoin.io';
 
 var active = [];
-active.token = 'PHC';
-active.address = 'TVxEqHRA9woSA2RvkJJEfmYJJG6NXvbFiV';
+active.token = names.CMD;
+active.address = addresses.CMD;
+
+var forgeContract;
 
 $(document).ready(function() {
 	// Add Options to Select
@@ -44,30 +35,39 @@ $(document).ready(function() {
 		active.token = token;
 		active.address = addresses[token];
 	});
+
 	function checkConnection() {
-	  if (!window.tronWeb) {
-	    return false;
-	  }
-	  if (!window.tronWeb.defaultAddress.base58) {
-	    return false;
-	  }
-	  return true;
+		console.log("Checking for web3");
+		// Checking if Web3 has been injected by the browser (Mist/MetaMask)
+		if (typeof web3 !== 'undefined') {
+			// Use Mist/MetaMask's provider
+			window.web3 = new Web3(web3.currentProvider);
+			abi = JSON.parse(forge_abi);
+
+			forgeContract = web3.eth.contract(abi);
+			return true;
+		} else {
+			console.log("Warning: no Web3 object- try the MetaMask browser extension.")
+			return false;
+			// fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
+			// window.web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+		}
 	}
 	$("#forge").click(function() {
 		if (checkConnection()) {
-			var contract = window.tronWeb.contract(abi_forge, active.address);
+			var contract = forgeContract.at(active.address);
 			// Get total WRLD to spend and make sure it's not too much. Then send forge request: don't forget to add the deciminals 10^6
 			var amt = $("#amtWRLD").val();
 			if (Number(amt) != NaN) {
-				amt = (amt * 1000000).toFixed(0);
-				contract.forge().send({shouldPollResponse: false, tokenValue: amt, tokenId: TID});
+				amt = (amt * 1000000000000000000).toFixed(0);
+				contract.forge(0, amt).send({shouldPollResponse: false});
 			}
 		}
 	});
 	// Get the correct registartion fee and send it to register for smithing.
 	$("#register").click(function() {
 		if (checkConnection()) {
-			var contract = window.tronWeb.contract(abi_forge, active.address);
+			var contract = forgeContract.at(active.address);
 			contract.smithFee().call().then(function (res) {
 				if (Number(res) != NaN) {
 					contract.paySmithingFee().send({shouldPollResponse: false, callValue: res});
@@ -80,14 +80,14 @@ $(document).ready(function() {
 		// Check global information that's player independent
 		if (checkConnection()) {
 			$("#disconnected_message").hide();
-			var contract = window.tronWeb.contract(abi_forge, active.address);
+			var contract = forgeContract.at(active.address);
 			contract.totalSupply().call().then(function (res) {
 				if (Number(res) != NaN) {
 					$("#total-supply").text(Math.round(res / 1000000));
 				}
 			});
 			// I can't seem to figure out which order is res and error!! Something's weird.
-			contract.balanceOf(tronWeb.defaultAddress.base58).call(function (err, res) {
+			contract.balanceOf(web3.eth.accounts[0]).call(function (err, res) {
 				$('#balance').text(res.balance / 1000000);
 			});
 			contract.totalWRLD().call().then(function (res, err) {
@@ -102,7 +102,7 @@ $(document).ready(function() {
 			});
 			contract.canSmith().call().then(function (res) {
 				if (res) {
-					contract.timeToForge(tronWeb.defaultAddress.base58).call().then(function (res) {
+					contract.timeToForge(web3.eth.accounts[0]).call().then(function (res) {
 						let val = Number(res)
 						$("#forge").prop('disabled', val != 0);
 						if (val != NaN && val != 0) {
