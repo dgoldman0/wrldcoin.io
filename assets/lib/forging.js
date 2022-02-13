@@ -106,7 +106,6 @@ $(document).ready(function() {
 					}
 				});
 				contract.methods.smithCount().call().then(function (res, err) {
-					console.log(err);
 					if (Number(res) != NaN) {
 						$("#smith-count").text(res);
 					}
@@ -152,5 +151,5 @@ $(document).ready(function() {
 		}
 	};
 	run();
-//	setInterval(run, 1000);
+	setInterval(run, 1000);
 });
