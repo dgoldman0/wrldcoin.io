@@ -78,7 +78,7 @@ $(document).ready(function() {
 			var contract = new web3.eth.Contract(abi_forge, active.address);
 			contract.methods.smithFee().call().then(function (res) {
 				if (Number(res) != NaN) {
-					contract.paySmithingFee().send({shouldPollResponse: false, callValue: res});
+					contract.methods.paySmithingFee().send({shouldPollResponse: false, callValue: res});
 				}
 			});
 		}
