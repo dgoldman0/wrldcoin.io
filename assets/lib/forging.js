@@ -105,7 +105,8 @@ $(document).ready(function() {
 						$("#total-wrld").text(res / 1000000000000000000);
 					}
 				});
-				contract.methods.smithCount().call().then(function (res) {
+				contract.methods.smithCount().call().then(function (res, err) {
+					console.log(err);
 					if (Number(res) != NaN) {
 						$("#smith-count").text(res);
 					}
