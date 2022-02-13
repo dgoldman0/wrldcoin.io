@@ -2,7 +2,7 @@ var addresses = [];
 var names = [];
 var links = [];
 
-addresses.CMD = '';
+addresses.CMD = '0x1dE2730D243605F5881847AE168BfFb774e0Ce5E';
 names.CMD = 'CMD Token';
 
 links.CMD = 'https://wrldcoin.io';
@@ -78,7 +78,7 @@ $(document).ready(function() {
 		if (checkConnection()) {
 			$("#disconnected_message").hide();
 			var contract = new web3.eth.Contract(abi_forge, active.address);
-			contract.totalSupply().call().then(function (res) {
+			contract.methods.totalSupply().call().then(function (res) {
 				if (Number(res) != NaN) {
 					$("#total-supply").text(Math.round(res / 1000000));
 				}
