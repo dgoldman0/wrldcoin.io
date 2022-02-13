@@ -89,60 +89,60 @@ $(document).ready(function() {
 		if (checkConnection()) {
 			$("#disconnected_message").hide();
 			var contract = new web3.eth.Contract(abi_forge, active.address);
-			contract.methods.totalSupply().call().then(function (res) {
-				if (Number(res) != NaN) {
-					$("#total-supply").text(Math.round(res / 1000000000000000000));
-				}
-			});
 			web3.eth.getAccounts(function(error, accounts) {
 				console.log(accounts[0]);
 				web3.eth.defaultAccount = accounts[0];
 				contract.methods.balanceOf(accounts[0]).call(function (err, res) {
 					$('#balance').text(res.balance / 1000000000000000000);
 				});
-			});
-			contract.methods.totalMaterialUsed().call().then(function (res, err) {
-				if (Number(res) != NaN) {
-					$("#total-wrld").text(res / 1000000000000000000);
-				}
-			});
-			contract.methods.smithCount().call().then(function (res) {
-				if (Number(res) != NaN) {
-					$("#smith-count").text(res);
-				}
-			});
-			contract.methods.canSmith().call().then(function (res) {
-				if (res) {
-					contract.methods.timeToForge(web3.eth.accounts[0]).call().then(function (res) {
-						let val = Number(res)
-						$("#forge").prop('disabled', val != 0);
-						if (val != NaN && val != 0) {
-							$("#forge").text("Forge In " + val + " Seconds");
-						} else {
-							$("#forge").text("Forge Tokens");
-						}
-					});
-					$("#register_form").hide();
-					$("#forge_form").show();
+				contract.methods.totalSupply().call().then(function (res) {
+					if (Number(res) != NaN) {
+						$("#total-supply").text(Math.round(res / 1000000000000000000));
+					}
+				});
+				contract.methods.totalMaterialUsed().call().then(function (res, err) {
+					if (Number(res) != NaN) {
+						$("#total-wrld").text(res / 1000000000000000000);
+					}
+				});
+				contract.methods.smithCount().call().then(function (res) {
+					if (Number(res) != NaN) {
+						$("#smith-count").text(res);
+					}
+				});
+				contract.methods.canSmith().call().then(function (res) {
+					if (res) {
+						contract.methods.timeToForge(web3.eth.accounts[0]).call().then(function (res) {
+							let val = Number(res)
+							$("#forge").prop('disabled', val != 0);
+							if (val != NaN && val != 0) {
+								$("#forge").text("Forge In " + val + " Seconds");
+							} else {
+								$("#forge").text("Forge Tokens");
+							}
+						});
+						$("#register_form").hide();
+						$("#forge_form").show();
 
-					contract.methods.forgePrice().call().then(function (res) {
-						if (Number(res) != NaN) {
-							$("#est").text($("#amtWRLD").val() / res);
-							$('#price').text(res);
-						}
-					});
-					contract.methods.maxForge().call().then(function (res) {
-						if (Number(res) != NaN) {
-							$("#max").text(res / 1000000000000000000);
-						}
-					});
-				} else {
-					$("#register_form").show();
-					$("#forge_form").hide();
-					contract.methods.smithFee().call().then(function (res) {
-						if (Number(res) != NaN) $("#registration_fee").text(res / 1000000000000000000);
-					});
-				}
+						contract.methods.forgePrice().call().then(function (res) {
+							if (Number(res) != NaN) {
+								$("#est").text($("#amtWRLD").val() / res);
+								$('#price').text(res);
+							}
+						});
+						contract.methods.maxForge().call().then(function (res) {
+							if (Number(res) != NaN) {
+								$("#max").text(res / 1000000000000000000);
+							}
+						});
+					} else {
+						$("#register_form").show();
+						$("#forge_form").hide();
+						contract.methods.smithFee().call().then(function (res) {
+							if (Number(res) != NaN) $("#registration_fee").text(res / 1000000000000000000);
+						});
+					}
+				});
 			});
 		} else {
 			$("#register_form").hide();
