@@ -96,6 +96,7 @@ $(document).ready(function() {
 			});
 			web3.eth.getAccounts(function(error, accounts) {
 				console.log(accounts[0]);
+				web3.eth.defaultAccount = accounts[0];
 				contract.methods.balanceOf(accounts[0]).call(function (err, res) {
 					$('#balance').text(res.balance / 1000000000000000000);
 				});
