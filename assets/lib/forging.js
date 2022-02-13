@@ -43,7 +43,7 @@ $(document).ready(function() {
 			// Use Mist/MetaMask's provider
 			window.web3 = new Web3(web3.currentProvider);
 
-			forgeContract = web3.eth.contract(abi_forge);
+			forgeContract = new web3.eth.Contract(abi_forge);
 			return true;
 		} else {
 			console.log("Warning: no Web3 object- try the MetaMask browser extension.")
