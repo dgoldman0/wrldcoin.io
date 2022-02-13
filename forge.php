@@ -111,7 +111,7 @@ It might also be interesting to allow people to create their own contract withou
 
                                 <div class="row">
                                     <div class="col text-center" id="register_form">
-                                        <h1 class="text-white">Register to Forge <span id = "cur">PHC</span></h1>
+                                        <h1 class="text-white">Register to Forge <span id = "cur">CMD</span></h1>
                                         You're not currently registered as a smith for this token. You'll have to pay an initial fee of <span id = "registration_fee">0</span> TRX to forge.
                                         <form>
                                             <div class="form-group">
@@ -121,8 +121,8 @@ It might also be interesting to allow people to create their own contract withou
                                     </div>
 
                                     <div class="col text-center" id="forge_form">
-                                        <h1 class="text-white">TokenForge (<a id = "project_link" href = "https://promote.health/public-health-coin/"><span id = "cur2">PHC</span></a>)</h1>
-                                        Wallet Balance: <span id = "balance">0</span> <span id = "cur3">PHC</span><br/>
+                                        <h1 class="text-white">TokenForge (<a id = "project_link" href = "https://wrldcoin.io/"><span id = "cur2">CMD</span></a>)</h1>
+                                        Wallet Balance: <span id = "balance">0</span> <span id = "cur3">CMD</span><br/>
                                         Forge Price: <span id = "price">0</span> WRLD<br/>
                                         Maximum KEM Allowed: <span id = "max">0</span><br/>
                                         Estimated number of tokens to forge: <span id = "est">0</span>

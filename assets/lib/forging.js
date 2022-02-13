@@ -11,8 +11,6 @@ var active = [];
 active.token = names.CMD;
 active.address = addresses.CMD;
 
-var forgeContract;
-
 $(document).ready(function() {
 	// Add Options to Select
 	var sel = document.getElementById('token');
@@ -36,25 +34,25 @@ $(document).ready(function() {
 		active.address = addresses[token];
 	});
 
+	//
+	console.log("Checking for web3");
+	// Checking if Web3 has been injected by the browser (Mist/MetaMask)
+	if (typeof window.web3 !== 'undefined') {
+		// Use Mist/MetaMask's provider
+		window.web3 = new Web3(web3.currentProvider);
+		window.ethereum.enable();
+	} else {
+		console.log("Warning: no Web3 object- try the MetaMask browser extension.")
+		// fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
+		// window.web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+	}
+	// Dummy function for now.
 	function checkConnection() {
-		console.log("Checking for web3");
-		// Checking if Web3 has been injected by the browser (Mist/MetaMask)
-		if (typeof window.web3 !== 'undefined') {
-			// Use Mist/MetaMask's provider
-			window.web3 = new Web3(web3.currentProvider);
-
-			forgeContract = new web3.eth.Contract(abi_forge);
-			return true;
-		} else {
-			console.log("Warning: no Web3 object- try the MetaMask browser extension.")
-			return false;
-			// fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
-			// window.web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
-		}
+		return typeof window.web3 !== 'undefined';
 	}
 	$("#forge").click(function() {
 		if (checkConnection()) {
-			var contract = forgeContract.at(active.address);
+			var contract = new web3.eth.Contract(abi_forge, active.address);
 			// Get total WRLD to spend and make sure it's not too much. Then send forge request: don't forget to add the deciminals 10^6
 			var amt = $("#amtWRLD").val();
 			if (Number(amt) != NaN) {
@@ -66,7 +64,7 @@ $(document).ready(function() {
 	// Get the correct registartion fee and send it to register for smithing.
 	$("#register").click(function() {
 		if (checkConnection()) {
-			var contract = forgeContract.at(active.address);
+			var contract = new web3.eth.Contract(abi_forge, active.address);
 			contract.smithFee().call().then(function (res) {
 				if (Number(res) != NaN) {
 					contract.paySmithingFee().send({shouldPollResponse: false, callValue: res});
@@ -79,7 +77,7 @@ $(document).ready(function() {
 		// Check global information that's player independent
 		if (checkConnection()) {
 			$("#disconnected_message").hide();
-			var contract = forgeContract.at(active.address);
+			var contract = new web3.eth.Contract(abi_forge, active.address);
 			contract.totalSupply().call().then(function (res) {
 				if (Number(res) != NaN) {
 					$("#total-supply").text(Math.round(res / 1000000));
