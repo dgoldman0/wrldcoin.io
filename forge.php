@@ -61,12 +61,12 @@ It might also be interesting to allow people to create their own contract withou
                 </div>
 
                 <div class="col-md-2">
-                    <h4 class="text-white"><span id="total-supply">0</span>M SUN</h4>
+                    <h4 class="text-white"><span id="total-supply">0</span></h4>
                     <small class="text-white">Total Supply</small>
                 </div>
 
                 <div class="col-md-2">
-                    <h4 class="text-white"><span id="total-wrld">0</span>M SUN</h4>
+                    <h4 class="text-white"><span id="total-wrld">0</span></h4>
                     <small class="text-white">KEM Used</small>
                 </div>
             </div>
