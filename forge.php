@@ -38,7 +38,7 @@ It might also be interesting to allow people to create their own contract withou
                     <div class="row">
                         <div class="col text-left">
                             <h1 class="text-white">TokenForge</h1>
-                            <p class="text-success">Forge new assets you need using WRLD token</p>
+                            <p class="text-success">A Unified Framework For Minting Ecosystem Tokens</p>
                         </div>
                     </div>
                 </div>
