@@ -83,8 +83,8 @@ $(document).ready(function() {
 					$("#total-supply").text(Math.round(res / 1000000000000000000));
 				}
 			});
-			console.log("Address:" + web3.eth.accounts[0]);
-			contract.methods.balanceOf(web3.eth.accounts[0]).call(function (err, res) {
+			console.log("Address:" + web3.eth.getAccounts()[0]);
+			contract.methods.balanceOf(web3.eth.getAccounts()[0]).call(function (err, res) {
 				$('#balance').text(res.balance / 1000000000000000000);
 			});
 			contract.methods.totalWRLD().call().then(function (res, err) {
