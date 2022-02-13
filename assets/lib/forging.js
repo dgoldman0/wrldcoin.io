@@ -42,9 +42,12 @@ $(document).ready(function() {
 		// Use Mist/MetaMask's provider
 		window.web3 = new Web3(web3.currentProvider);
 		window.ethereum.enable();
+		web3.eth.getAccounts(function(error, accounts) {
+			console.log(accounts[0]);
+			web3.eth.defaultAccount = accounts[0];
+		});
 		window.ethereum.on('accountsChanged', function (accounts) {
       console.log('accountsChanges',accounts);
-
     });
 
     // detect Network account change
@@ -90,7 +93,6 @@ $(document).ready(function() {
 			$("#disconnected_message").hide();
 			var contract = new web3.eth.Contract(abi_forge, active.address);
 			web3.eth.getAccounts(function(error, accounts) {
-				console.log(accounts[0]);
 				web3.eth.defaultAccount = accounts[0];
 				contract.methods.balanceOf(accounts[0]).call(function (err, res) {
 					$('#balance').text(res.balance / 1000000000000000000);
