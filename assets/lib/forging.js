@@ -83,7 +83,7 @@ $(document).ready(function() {
 					$("#total-supply").text(Math.round(res / 1000000000000000000));
 				}
 			});
-			// I can't seem to figure out which order is res and error!! Something's weird.
+			console.log("Address:" + web3.eth.accounts[0]);
 			contract.methods.balanceOf(web3.eth.accounts[0]).call(function (err, res) {
 				$('#balance').text(res.balance / 1000000000000000000);
 			});
