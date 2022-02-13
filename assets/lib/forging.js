@@ -3,7 +3,7 @@ var names = [];
 var links = [];
 
 // This section will eventually be replaced with a dynamic list
-addresses.CMD = '0x1dE2730D243605F5881847AE168BfFb774e0Ce5E';
+addresses.CMD = '0x0499b5F9f402476C1345CCafdBfc9bB12f311078';
 names.CMD = 'CMD Token';
 
 links.CMD = 'https://wrldcoin.io';
