@@ -2,6 +2,7 @@ var addresses = [];
 var names = [];
 var links = [];
 
+// This section will eventually be replaced with a dynamic list
 addresses.CMD = '0x1dE2730D243605F5881847AE168BfFb774e0Ce5E';
 names.CMD = 'CMD Token';
 
@@ -41,6 +42,16 @@ $(document).ready(function() {
 		// Use Mist/MetaMask's provider
 		window.web3 = new Web3(web3.currentProvider);
 		window.ethereum.enable();
+		window.ethereum.on('accountsChanged', function (accounts) {
+      console.log('accountsChanges',accounts);
+
+    });
+
+    // detect Network account change
+    window.ethereum.on('networkChanged', function(networkId){
+      console.log('networkChanged',networkId);
+			// Here we'll check to see if the new network is one of the networks supported and the token list will be changed
+    });
 	} else {
 		console.log("Warning: no Web3 object- try the MetaMask browser extension.")
 		// fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
@@ -89,7 +100,7 @@ $(document).ready(function() {
 					$('#balance').text(res.balance / 1000000000000000000);
 				});
 			});
-			contract.methods.totalWRLD().call().then(function (res, err) {
+			contract.methods.totalMaterialUsed().call().then(function (res, err) {
 				if (Number(res) != NaN) {
 					$("#total-wrld").text(res / 1000000000000000000);
 				}
