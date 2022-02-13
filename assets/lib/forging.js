@@ -11,6 +11,7 @@ links.CMD = 'https://wrldcoin.io';
 var active = [];
 active.token = names.CMD;
 active.address = addresses.CMD;
+var defaultAccount;
 
 $(document).ready(function() {
 	// Add Options to Select
@@ -44,7 +45,7 @@ $(document).ready(function() {
 		window.ethereum.enable();
 		web3.eth.getAccounts(function(error, accounts) {
 			console.log(accounts[0]);
-			web3.eth.defaultAccount = accounts[0];
+			defaultAccount = accounts[0];
 		});
 		window.ethereum.on('accountsChanged', function (accounts) {
       console.log('accountsChanges',accounts);
@@ -78,7 +79,7 @@ $(document).ready(function() {
 	// Get the correct registartion fee and send it to register for smithing.
 	$("#register").click(function() {
 		if (checkConnection()) {
-			var contract = new web3.eth.Contract(abi_forge, active.address);
+			var contract = new web3.eth.Contract(abi_forge, active.address, {from: defaultAccount});
 			contract.methods.smithFee().call().then(function (res) {
 				if (Number(res) != NaN) {
 					contract.methods.paySmithingFee().send({shouldPollResponse: false, callValue: res});
