@@ -39,12 +39,11 @@ $(document).ready(function() {
 	function checkConnection() {
 		console.log("Checking for web3");
 		// Checking if Web3 has been injected by the browser (Mist/MetaMask)
-		if (typeof web3 !== 'undefined') {
+		if (typeof window.web3 !== 'undefined') {
 			// Use Mist/MetaMask's provider
-			window.web3 = new Web3(web3.currentProvider);
 			abi = JSON.parse(forge_abi);
 
-			forgeContract = web3.eth.contract(abi);
+			forgeContract = window.web3.eth.contract(abi);
 			return true;
 		} else {
 			console.log("Warning: no Web3 object- try the MetaMask browser extension.")
