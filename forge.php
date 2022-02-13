@@ -85,7 +85,7 @@ It might also be interesting to allow people to create their own contract withou
                                             <br />
                                             <b>Forging:</b> To make forging a bit more like actually mining for things like gold and silver, the forge rate isn't constant. Instead, the cost to forge increases based on how recently the last forge occurred. You may try forging tokens once per hour, up to the current per user forge limit. <i><b>The forge process is competative. If someone forges right before you, the cost per token may be significantly higher than expected and the number of tokens you receive may be significnatly less than expected</b></i>.<br />
                                             <br />
-                                            <b>Registration:</b> To prevent people from abusing the system and forging with multiple accounts, you'll have to pay an initial registration fee. This fee will make you a smith a coin. It's a one time fee (per token project), paid in TRX, to the project stewards. Each project sets its own smithing fee.
+                                            <b>Registration:</b> To prevent people from abusing the system and forging with multiple accounts, you'll have to pay an initial registration fee. This fee will make you a smith a coin. It's a one time fee (per token project), paid in <span id = "chain_currency1">BSC</span>, to the project stewards. Each project sets its own smithing fee.
                                         </p>
                                     </div>
                                 </div>
@@ -112,7 +112,7 @@ It might also be interesting to allow people to create their own contract withou
                                 <div class="row">
                                     <div class="col text-center" id="register_form">
                                         <h1 class="text-white">Register to Forge <span id = "cur">CMD</span></h1>
-                                        You're not currently registered as a smith for this token. You'll have to pay an initial fee of <span id = "registration_fee">0</span> TRX to forge.
+                                        You're not currently registered as a smith for this token. You'll have to pay an initial fee of <span id = "registration_fee">0</span> <span id = "chain_currency2">BSC</span> to forge.
                                         <form>
                                             <div class="form-group">
                                                 <center><button type = "button" class = "btn btn-primary" id = "register">Register</button></center>
