@@ -57,7 +57,7 @@ $(document).ready(function() {
 			var amt = $("#amtWRLD").val();
 			if (Number(amt) != NaN) {
 				amt = (amt * 1000000000000000000).toFixed(0);
-				contract.forge(0, amt).send({shouldPollResponse: false});
+				contract.methods.forge(0, amt).send({shouldPollResponse: false});
 			}
 		}
 	});
@@ -65,7 +65,7 @@ $(document).ready(function() {
 	$("#register").click(function() {
 		if (checkConnection()) {
 			var contract = new web3.eth.Contract(abi_forge, active.address);
-			contract.smithFee().call().then(function (res) {
+			contract.methods.smithFee().call().then(function (res) {
 				if (Number(res) != NaN) {
 					contract.paySmithingFee().send({shouldPollResponse: false, callValue: res});
 				}
@@ -80,26 +80,26 @@ $(document).ready(function() {
 			var contract = new web3.eth.Contract(abi_forge, active.address);
 			contract.methods.totalSupply().call().then(function (res) {
 				if (Number(res) != NaN) {
-					$("#total-supply").text(Math.round(res / 1000000));
+					$("#total-supply").text(Math.round(res / 1000000000000000000));
 				}
 			});
 			// I can't seem to figure out which order is res and error!! Something's weird.
-			contract.balanceOf(web3.eth.accounts[0]).call(function (err, res) {
-				$('#balance').text(res.balance / 1000000);
+			contract.methods.balanceOf(web3.eth.accounts[0]).call(function (err, res) {
+				$('#balance').text(res.balance / 1000000000000000000);
 			});
-			contract.totalWRLD().call().then(function (res, err) {
+			contract.methods.totalWRLD().call().then(function (res, err) {
 				if (Number(res) != NaN) {
-					$("#total-wrld").text(res / 1000000);
+					$("#total-wrld").text(res / 1000000000000000000);
 				}
 			});
-			contract.smithCount().call().then(function (res) {
+			contract.methods.smithCount().call().then(function (res) {
 				if (Number(res) != NaN) {
 					$("#smith-count").text(res);
 				}
 			});
-			contract.canSmith().call().then(function (res) {
+			contract.methods.canSmith().call().then(function (res) {
 				if (res) {
-					contract.timeToForge(web3.eth.accounts[0]).call().then(function (res) {
+					contract.methods.timeToForge(web3.eth.accounts[0]).call().then(function (res) {
 						let val = Number(res)
 						$("#forge").prop('disabled', val != 0);
 						if (val != NaN && val != 0) {
@@ -111,22 +111,22 @@ $(document).ready(function() {
 					$("#register_form").hide();
 					$("#forge_form").show();
 
-					contract.forgePrice().call().then(function (res) {
+					contract.methods.forgePrice().call().then(function (res) {
 						if (Number(res) != NaN) {
 							$("#est").text($("#amtWRLD").val() / res);
 							$('#price').text(res);
 						}
 					});
-					contract.maxForge().call().then(function (res) {
+					contract.methods.maxForge().call().then(function (res) {
 						if (Number(res) != NaN) {
-							$("#max").text(res / 1000000);
+							$("#max").text(res / 1000000000000000000);
 						}
 					});
 				} else {
 					$("#register_form").show();
 					$("#forge_form").hide();
-					contract.smithFee().call().then(function (res) {
-						if (Number(res) != NaN) $("#registration_fee").text(res / 1000000);
+					contract.methods.smithFee().call().then(function (res) {
+						if (Number(res) != NaN) $("#registration_fee").text(res / 1000000000000000000);
 					});
 				}
 			});
