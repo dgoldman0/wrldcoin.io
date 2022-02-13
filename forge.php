@@ -153,6 +153,7 @@ It might also be interesting to allow people to create their own contract withou
 
         <!-- Dapp Scripts -->
         <script src="assets/lib/abi.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.1-rc.0/web3.min.js"></script>
         <script src="assets/lib/forging.js"></script>
     </body>
 </html>

@@ -41,7 +41,9 @@ $(document).ready(function() {
 		// Checking if Web3 has been injected by the browser (Mist/MetaMask)
 		if (typeof window.web3 !== 'undefined') {
 			// Use Mist/MetaMask's provider
-			forgeContract = window.web3.eth.contract(abi_forge);
+			window.web3 = new Web3(web3.currentProvider);
+
+			forgeContract = web3.eth.contract(abi_forge);
 			return true;
 		} else {
 			console.log("Warning: no Web3 object- try the MetaMask browser extension.")
