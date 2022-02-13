@@ -41,7 +41,7 @@ $(document).ready(function() {
 		// Checking if Web3 has been injected by the browser (Mist/MetaMask)
 		if (typeof window.web3 !== 'undefined') {
 			// Use Mist/MetaMask's provider
-			abi = JSON.parse(forge_abi);
+			abi = JSON.parse(abi_forge);
 
 			forgeContract = window.web3.eth.contract(abi);
 			return true;
