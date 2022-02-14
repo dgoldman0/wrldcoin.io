@@ -98,7 +98,7 @@ $(document).ready(function() {
 		if (checkConnection()) {
 			$("#disconnected_message").hide();
 			var contract = new web3.eth.Contract(abi_forge, active.address);
-			var resourceContract = web3.eth.Contract(abi_ierc20, resourceAddress);
+//			var resourceContract = web3.eth.Contract(abi_ierc20, resourceAddress);
 			web3.eth.getAccounts(function(error, accounts) {
 				web3.eth.defaultAccount = accounts[0];
 				contract.methods.balanceOf(accounts[0]).call(function (err, res) {
