@@ -140,7 +140,7 @@ $(document).ready(function() {
 						});
 					} else {
 						$("#forge").hide();
-						$("approve").hide();
+						$("#approve").hide();
 						$("#register_form").show();
 						$("#forge_form").hide();
 						contract.methods.smithFee().call().then(function (res) {
