@@ -126,7 +126,7 @@ $(document).ready(function() {
 						$("#register_form").hide();
 						$("#forge_form").show();
 
-						contract.methods.forgePrice().call().then(function (res) {
+						contract.methods.conversionRate(0).call().then(function (res) {
 							if (Number(res) != NaN) {
 								$("#est").text($("#amtWRLD").val() / res);
 								$('#price').text(res);
