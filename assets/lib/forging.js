@@ -3,6 +3,7 @@ var names = [];
 var links = [];
 
 // This section will eventually be replaced with a dynamic list
+// Need to add resource addresses, or at least KEM to start
 addresses.CMD = '0x0499b5F9f402476C1345CCafdBfc9bB12f311078';
 names.CMD = 'CMD Token';
 links.CMD = 'https://wrldcoin.io';
@@ -132,12 +133,14 @@ $(document).ready(function() {
 								$('#price').text(res);
 							}
 						});
-						contract.methods.maxForge().call().then(function (res) {
+						contract.methods.forgeLimit(0).call().then(function (res) {
 							if (Number(res) != NaN) {
 								$("#max").text(res / 1000000000000000000);
 							}
 						});
 					} else {
+						$("#forge").hide();
+						$("approve").hide();
 						$("#register_form").show();
 						$("#forge_form").hide();
 						contract.methods.smithFee().call().then(function (res) {

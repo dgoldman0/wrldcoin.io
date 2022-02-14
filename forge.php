@@ -136,6 +136,7 @@ It might also be interesting to allow people to create their own contract withou
                         <div class="card-footer glassPanel rcBottom">
                             <div class="row">
                                 <div class="col text-center">
+                                    <button type = "button" class = "btn btn-block btn-sm btn-primary rcAll" id = "approve">Approve Resource</button>
                                     <button type = "button" class = "btn btn-block btn-sm btn-primary rcAll" id = "forge">Forge Tokens</button>
                                 </div>
                             </div>
