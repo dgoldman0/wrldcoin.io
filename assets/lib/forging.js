@@ -141,7 +141,6 @@ $(document).ready(function() {
 							}
 						});
 						contract.methods.forgeLimit(0).call().then(function (res) {
-							});
 							if (Number(res) != NaN) {
 								resourceContract.methods.allowance(accounts[0], active.address).call().then(function (res2) {
 									if (Number(res2) != NaN && res2 >= res) {
@@ -151,6 +150,7 @@ $(document).ready(function() {
 										$("#forge").hide();
 										$("#approve").show();
 									}
+								});
 								$("#max").text(res / 1000000000000000000);
 							}
 						});
