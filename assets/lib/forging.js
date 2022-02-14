@@ -99,7 +99,7 @@ $(document).ready(function() {
 		if (checkConnection()) {
 			$("#disconnected_message").hide();
 			var contract = new web3.eth.Contract(abi_forge, active.address);
-			var resourceContract = web3.eth.Contract(abi_ierc20, resourceAddress);
+			var resourceContract = new web3.eth.Contract(abi_ierc20, resourceAddress);
 			web3.eth.getAccounts(function(error, accounts) {
 				web3.eth.defaultAccount = accounts[0];
 				contract.methods.balanceOf(accounts[0]).call(function (err, res) {
@@ -122,7 +122,7 @@ $(document).ready(function() {
 				});
 				contract.methods.canSmith().call().then(function (res) {
 					if (res) {
-						contract.methods.timeToForge(web3.eth.defaultAccount).call().then(function (res) {
+						contract.methods.timeToForge(accounts[0]).call().then(function (res) {
 							let val = Number(res)
 							$("#forge").prop('disabled', val != 0);
 							if (val != NaN && val != 0) {
@@ -141,6 +141,15 @@ $(document).ready(function() {
 							}
 						});
 						contract.methods.forgeLimit(0).call().then(function (res) {
+							resourceContract.methods.allowance(accounts[0], active.address).call().then(function (res) {
+								if (Number(res) != NaN) {
+									$("#forge").show();
+									$("#approve").hide();
+								} else {
+									$("#forge").hide();
+									$("#approve").show();
+								}
+							});
 							if (Number(res) != NaN) {
 								$("#max").text(res / 1000000000000000000);
 							}
