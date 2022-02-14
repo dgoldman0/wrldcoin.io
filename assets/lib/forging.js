@@ -115,7 +115,7 @@ $(document).ready(function() {
 				});
 				contract.methods.canSmith().call().then(function (res) {
 					if (res) {
-						contract.methods.timeToForge(web3.eth.accounts[0]).call().then(function (res) {
+						contract.methods.timeToForge(web3.eth.defaultAccount).call().then(function (res) {
 							let val = Number(res)
 							$("#forge").prop('disabled', val != 0);
 							if (val != NaN && val != 0) {
