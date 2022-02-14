@@ -3,9 +3,14 @@ var names = [];
 var links = [];
 
 // This section will eventually be replaced with a dynamic list
-// Need to add resource addresses, or at least KEM to start
+resourceName = "Kemet";
+resourceSymbol = "KEM";
+resourceAddress = "0x1dE2730D243605F5881847AE168BfFb774e0Ce5E";
+
+// Change from name based to #id based
 addresses.CMD = '0x0499b5F9f402476C1345CCafdBfc9bB12f311078';
 names.CMD = 'CMD Token';
+symbols.CMD = "CMD";
 links.CMD = 'https://wrldcoin.io';
 
 var active = [];
@@ -93,6 +98,7 @@ $(document).ready(function() {
 		if (checkConnection()) {
 			$("#disconnected_message").hide();
 			var contract = new web3.eth.Contract(abi_forge, active.address);
+			var resourceContract = web3.eth.Contract(abi_ierc20, resourceAddress);
 			web3.eth.getAccounts(function(error, accounts) {
 				web3.eth.defaultAccount = accounts[0];
 				contract.methods.balanceOf(accounts[0]).call(function (err, res) {
